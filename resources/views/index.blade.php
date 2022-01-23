@@ -132,10 +132,8 @@
 
                                 <ul id="nav" class="nav menu navbar-nav">
                                     <li class=""><a href="index-2.html">Home</a></li>
-                                    <li><a href="#">Pages<i class="far fa-angle-down"></i></a>
+                                    <li><a href="#">Activities<i class="far fa-angle-down"></i></a>
                                         <ul class="dropdown">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="mission.html">Our Mission</a></li>
                                             <li><a href="#">Teachers<i class="far fa-angle-right"></i></a>
                                                 <ul class="dropdown submenu">
                                                     <li><a href="teacher.html">Teachers One</a></li>
@@ -144,19 +142,21 @@
                                             <li><a href="gallery.html">Gallery</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Events<i class="far fa-angle-down"></i></a>
+                                    <li><a href="#">Admission<i class="far fa-angle-down"></i></a>
                                         <ul class="dropdown">
                                             <li><a href="events.html">Events</a></li>
                                             <li><a href="event-single.html">Event Single</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Blogs<i class="far fa-angle-down"></i></a>
+                                    <li><a href="#">Notice<i class="far fa-angle-down"></i></a>
                                         <ul class="dropdown">
-                                            <li><a href="blogs.html">Blogs Grid Layout</a></li>
-                                            <li><a href="blogs-left-sidebar.html">Blogs Left Sidebar</a></li>
+                                            <li><a href="blogs.html">Class Notice</a></li>
+                                            <li><a href="blogs-left-sidebar.html">Exam Notice</a></li>
+                                            <li><a href="blogs-left-sidebar.html">All Notice</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
 
 
@@ -177,13 +177,13 @@
     <section class="home-slider">
         <div class="hero-slider owl-carousel owl-theme">
 
-            <div class="single-slider overlay" style="background-image:url('assets/img/slider/1.jpg')">
+            <div class="single-slider overlay" style="background-image:url('assets/img/college/slider1.jpg')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
                             <div class="slider-text">
-                                <h1>Best Template For <span>Education And Courses</span> Business</h1>
-                                <p>There are many variations of passages of available but the majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable.</p>
+                                <h1>Best Educational Institute <span>Academic And Proffesional</span></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique possimus deserunt! Dolorum porro, mollitia dolorem aperiam velit voluptate labore.</p>
                                 <div class="button">
                                     <a href="courses.html" class="btn primary">Our Courses</a>
                                     <a href="about.html" class="btn">Learn More</a>
@@ -193,15 +193,13 @@
                     </div>
                 </div>
             </div>
-
-
-            <div class="single-slider overlay" style="background-image:url('assets/img/slider/2.jpg')">
+            <div class="single-slider overlay" style="background-image:url('assets/img/college/slider2.jpg')">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-12">
-                            <div class="slider-text text-center">
-                                <h1>Best Template For <span>Education And Courses</span> Business</h1>
-                                <p>There are many variations of passages of available but the majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable.</p>
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <div class="slider-text">
+                                <h1>Best Educational Institute <span>Academic And Proffesional</span></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique possimus deserunt! Dolorum porro, mollitia dolorem aperiam velit voluptate labore.</p>
                                 <div class="button">
                                     <a href="courses.html" class="btn primary">Our Courses</a>
                                     <a href="about.html" class="btn">Learn More</a>
@@ -211,15 +209,13 @@
                     </div>
                 </div>
             </div>
-
-
-            <div class="single-slider overlay" style="background-image:url('assets/img/slider/3.jpg')">
+            <div class="single-slider overlay" style="background-image:url('assets/img/college/slider3.jpg')">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 offset-lg-4 col-md-8 offset-md-4 col-12">
-                            <div class="slider-text text-end">
-                                <h1>Best Template For <span>Education And Courses</span> Business</h1>
-                                <p>There are many variations of passages of available but the majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable.</p>
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <div class="slider-text">
+                                <h1>Best Educational Institute <span>Academic And Proffesional</span></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique possimus deserunt! Dolorum porro, mollitia dolorem aperiam velit voluptate labore.</p>
                                 <div class="button">
                                     <a href="courses.html" class="btn primary">Our Courses</a>
                                     <a href="about.html" class="btn">Learn More</a>
@@ -229,6 +225,8 @@
                     </div>
                 </div>
             </div>
+
+
 
         </div>
     </section>
