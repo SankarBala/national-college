@@ -3,6 +3,7 @@
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\NoticeController;
+use App\Http\Controllers\OptionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,4 @@ Route::get('/terms-of-use', [BaseController::class, 'termsOfUse'])->name('terms-
 // Resourse routes
 Route::resource('/event', EventController::class);
 Route::resource('/notice', NoticeController::class);
+Route::resource('/option', OptionController::class);
