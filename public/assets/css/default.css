@@ -153,7 +153,7 @@ th {
 	width: 45px;
 	height: 45px;
 	line-height: 45px;
-	background: #00B16A;
+	background: #026f9b;
 	z-index: 33;
 	font-size: 25px;
 	bottom: 20px;
@@ -166,7 +166,7 @@ th {
 }
 #scrollUp:hover{
 	background:#252525;
-	color:#00B16A;
+	color:#026f9b;
 	bottom:15px;
 }
 .table {
@@ -348,7 +348,7 @@ big {
 	left: 50%;
 	content: "";
 	width: 100px;
-	border-top: 2.5px solid #00B16A;
+	border-top: 2.5px solid #026f9b;
 	bottom: -1px;
 	margin-left: -63px;
 }
@@ -357,12 +357,12 @@ big {
 	left: 50%;
 	content: "";
 	width: 100px;
-	border-top: 2.5px solid #00B16A;
+	border-top: 2.5px solid #026f9b;
 	bottom: -8px;
 	margin-left: -50px;
 }
 .section-title h2 span{
-	color: #00B16A;
+	color: #026f9b;
 }
 .section-title p {
 	font-size: 15px;
@@ -410,7 +410,7 @@ big {
 	padding: 4px 20px;
 	border-radius: 5px;
 	color: #fff;
-	background: #00B16A;
+	background: #026f9b;
 }
 .breadcrumbs ul li i{
 	margin:0px 15px;
@@ -421,7 +421,7 @@ big {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #00B16A;
+  background: #026f9b;
   z-index: 999999;
 }
 .loader {
@@ -474,10 +474,10 @@ big {
     transform: perspective(600px) rotateY(0deg);
   }
   20% {
-    background: #00B16A;
+    background: #026f9b;
   }
   29.9% {
-    background: #00B16A;
+    background: #026f9b;
   }
   30% {
     -webkit-transform: perspective(200px) rotateY(-90deg);
@@ -507,10 +507,10 @@ big {
     transform: perspective(600px) rotateY(0deg);
   }
   20% {
-    background: #00B16A;
+    background: #026f9b;
   }
   29.9% {
-    background: #00B16A;
+    background: #026f9b;
   }
   30% {
     -webkit-transform: perspective(200px) rotateY(-90deg);
@@ -610,7 +610,7 @@ big {
 	cursor: pointer;
 	display: inline-block;
 }
-.mp-color span.color1{background-color:#00B16A}
+.mp-color span.color1{background-color:#026f9b}
 .mp-color span.color2{background-color:#7EBD4F}
 .mp-color span.color3{background-color:#28CAC8;}
 .mp-color span.color4{background-color:#F37348;}

@@ -1,179 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>National College</title>
-
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-
-    <link rel="stylesheet" href="assets/css/slicknav.min.css">
-
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-    <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-</head>
-
-<body>
-
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader-page"></div>
-            <div class="loader-page"></div>
-            <div class="loader-page"></div>
-        </div>
-    </div>
-
-
-    <header class="header">
-
-        <div class="topbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-12">
-                        <marquee direction="left" style="color:white">
-                            <ul class="nav">
-                                <li class=""><a class="my-0 py-0" href="#">Recent notice go here</a></li>
-                            </ul>
-                        </marquee>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="topbar-right">
-
-                            <ul class="social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            </ul>
-
-
-                            <div class="search">
-                                <ul>
-                                    <li class="search_btn"><a href="#"><i class="far fa-search"></i></a></li>
-                                </ul>
-                                <div class="header_search_content">
-                                    <div class="header_search_content_inner">
-                                        <a href="#" class="close_btn"><i class="fal fa-times"></i></a>
-                                        <form id="searchbox" method="get" action="#">
-                                            <input class="search_query" type="text" id="search_query_top" name="s" placeholder="Enter Keyword" value="">
-                                            <button type="submit" class="btn close-search"><i class="fal fa-search"></i></button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="header-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-12">
-                        <div class="logo">
-                            <a href="index-2.html"><img src="assets/img/logo.png" alt="#" width="100px" height=""></a>
-                        </div>
-                        <div class="mobile-menu"></div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-12">
-
-                        <div class="header-widget">
-                            <div class="single-widget">
-                                <i class="far fa-phone"></i>
-                                <h4>Call Now<span>+880-1745-993722</span></h4>
-                            </div>
-                            <div class="single-widget">
-                                <i class="far fa-envelope"></i>
-                                <h4>Email Us<a href="mailto:query@nationalcollege.edu.bd"><span><span class="__cf_email__" data-cfemail="">query@nationalcollege.edu.bd</span></span></a></h4>
-                            </div>
-                            <div class="single-widget">
-                                <i class="far fa-map-marker-alt"></i>
-                                <h4>Our Location<span>Pragati Sharanee, Badda, Gulshan, Dhaka-1212</span></h4>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="header-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-default">
-                            <div class="navbar-collapse">
-
-                                <ul id="nav" class="nav menu navbar-nav">
-                                    <li class=""><a href="index-2.html">Home</a></li>
-                                    <li><a href="#">Activities<i class="far fa-angle-down"></i></a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">Teachers<i class="far fa-angle-right"></i></a>
-                                                <ul class="dropdown submenu">
-                                                    <li><a href="teacher.html">Teachers One</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Admission<i class="far fa-angle-down"></i></a>
-                                        <ul class="dropdown">
-                                            <li><a href="events.html">Events</a></li>
-                                            <li><a href="event-single.html">Event Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Notice<i class="far fa-angle-down"></i></a>
-                                        <ul class="dropdown">
-                                            <li><a href="blogs.html">Class Notice</a></li>
-                                            <li><a href="blogs-left-sidebar.html">Exam Notice</a></li>
-                                            <li><a href="blogs-left-sidebar.html">All Notice</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">About Us</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-
-
-                                <div class="button">
-                                    <a href="contact.html" class="btn"><i class="far fa-pencil"></i>Apply Now</a>
-                                </div>
-
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </header>
-
-
+@section('content')
     <section class="home-slider">
         <div class="hero-slider owl-carousel owl-theme">
 
@@ -183,39 +10,7 @@
                         <div class="col-lg-8 col-md-8 col-12">
                             <div class="slider-text">
                                 <h1>Best Educational Institute <span>Academic And Proffesional</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique possimus deserunt! Dolorum porro, mollitia dolorem aperiam velit voluptate labore.</p>
-                                <div class="button">
-                                    <a href="courses.html" class="btn primary">Our Courses</a>
-                                    <a href="about.html" class="btn">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slider overlay" style="background-image:url('assets/img/college/slider2.jpg')">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-12">
-                            <div class="slider-text">
-                                <h1>Best Educational Institute <span>Academic And Proffesional</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique possimus deserunt! Dolorum porro, mollitia dolorem aperiam velit voluptate labore.</p>
-                                <div class="button">
-                                    <a href="courses.html" class="btn primary">Our Courses</a>
-                                    <a href="about.html" class="btn">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-slider overlay" style="background-image:url('assets/img/college/slider3.jpg')">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-12">
-                            <div class="slider-text">
-                                <h1>Best Educational Institute <span>Academic And Proffesional</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique possimus deserunt! Dolorum porro, mollitia dolorem aperiam velit voluptate labore.</p>
+                                <p>Besides standard lesson plan, expert and experienced teachers, teaching and strict administration, a well location and surrounding of the institution is a prerequisite undoubtedly. In view of this, National College has been set up in a learning oriented distinct building at Gulshan-Baridhara aristocratic area to and from where one can communicate easily.</p>
                                 <div class="button">
                                     <a href="courses.html" class="btn primary">Our Courses</a>
                                     <a href="about.html" class="btn">Learn More</a>
@@ -290,26 +85,21 @@
 
                             <div class="enroll-form">
                                 <div class="form-title">
-                                    <h2>Start Your Enrollment</h2>
-                                    <p>It is a long established fact that a reader will be distracted</p>
+                                    <h2>Connect our social network</h2>
+                                    <p></p>
                                 </div>
 
-                                <form class="form" action="#">
-                                    <div class="form-group">
-                                        <label>Full Name</label>
-                                        <input name="name" type="text" placeholder="Enter your name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Email Address</label>
-                                        <input name="email" type="email" placeholder="Enter your email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Type Message</label>
-                                        <textarea name="message" placeholder="Enter your message"></textarea>
-                                    </div>
-                                    <div class="form-group button">
-                                        <button type="submit" class="btn">Register Now</button>
-                                    </div>
+                                <form class="p-2" action="#">
+                                    <iframe 
+                                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNationalCollege.edu.Bangladesh&tabs=timeline&width=480&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                                        width="100%"
+                                        height="500px" 
+                                        style="border:none;overflow:hidden"
+                                        scrolling="no"
+                                        frameborder="0" 
+                                        allowfullscreen="true"
+                                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                    </iframe>
                                 </form>
 
                             </div>
@@ -749,16 +539,16 @@
 
                         <div class="single-event">
                             <div class="head overlay">
-                                <img src="assets/img/events/1.jpg" alt="#">
-                                <a href="assets/img/events/1.jpg" data-fancybox="photo" class="btn"><i class="far fa-search"></i></a>
+                                <img src="assets/img/college/16.jpg" alt="#">
+                                <a href="assets/img/college/16.jpg" data-fancybox="photo" class="btn"><i class="far fa-search"></i></a>
                             </div>
                             <div class="event-content">
                                 <div class="meta">
-                                    <span><i class="far fa-calendar-alt"></i>02 July 2021</span>
-                                    <span><i class="far fa-clock"></i>10.00Am-4.00PM</span>
+                                    <span><i class="far fa-calendar-alt"></i>21 February 2022</span>
+                                    <span><i class="far fa-clock"></i>7.00AM-8.00AM</span>
                                 </div>
-                                <h4><a href="event-single.html">Foundation Program 2021</a></h4>
-                                <p>There are many variations of passages of orem psum available but the majority have suffered.</p>
+                                <h4><a href="event-single.html">Event Title</a></h4>
+                                <p>Event description</p>
                                 <div class="button">
                                     <a href="event-single.html" class="btn">Join Event <i class="far fa-long-arrow-right"></i></a>
                                 </div>
@@ -766,44 +556,9 @@
                         </div>
 
 
-                        <div class="single-event">
-                            <div class="head overlay">
-                                <img src="assets/img/events/2.jpg" alt="#">
-                                <a href="assets/img/events/2.jpg" data-fancybox="photo" class="btn"><i class="far fa-search"></i></a>
-                            </div>
-                            <div class="event-content">
-                                <div class="meta">
-                                    <span><i class="far fa-calendar-alt"></i>02 July 2021</span>
-                                    <span><i class="far fa-clock"></i>10.00Am-4.00PM</span>
-                                </div>
-                                <h4><a href="event-single.html">Student Award 2021</a></h4>
-                                <p>There are many variations of passages of orem psum available but the majority have suffered.</p>
-                                <div class="button">
-                                    <a href="event-single.html" class="btn">Join Event <i class="far fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
 
 
-                        <div class="single-event">
-                            <div class="head overlay">
-                                <img src="assets/img/events/3.jpg" alt="#">
-                                <a href="assets/img/events/3.jpg" data-fancybox="photo" class="btn"><i class="far fa-search"></i></a>
-                            </div>
-                            <div class="event-content">
-                                <div class="meta">
-                                    <span><i class="far fa-calendar-alt"></i>02 July 2021</span>
-                                    <span><i class="far fa-clock"></i>10.00Am-4.00PM</span>
-                                </div>
-                                <div class="title">
-                                    <h4><a href="event-single.html">High School Program 2021</a></h4>
-                                    <p>There are many variations of passages of orem psum available but the majority have suffered.</p>
-                                </div>
-                                <div class="button">
-                                    <a href="event-single.html" class="btn">Join Event <i class="far fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                     
 
                     </div>
                 </div>
@@ -819,8 +574,8 @@
 
                     <div class="single-fact">
                         <i class="far fa-book-open"></i>
-                        <div class="number"><span class="counter">60</span>+</div>
-                        <p>Total Cources</p>
+                        <div class="number"><span class="counter">120</span>+</div>
+                        <p>Total Class Room</p>
                     </div>
 
                 </div>
@@ -836,9 +591,9 @@
                 <div class="col-lg-3 col-md-6 col-6 wow zoomIn" data-wow-delay="0.8s">
 
                     <div class="single-fact">
-                        <i class="far fa-video"></i>
-                        <div class="number"><span class="counter">220</span>+</div>
-                        <p>Video Cources</p>
+                        <i class="far fa-users"></i>
+                        <div class="number"><span class="counter">80</span>+</div>
+                        <p>Total Teacher</p>
                     </div>
 
                 </div>
@@ -846,7 +601,7 @@
 
                     <div class="single-fact">
                         <i class="far fa-award"></i>
-                        <div class="number"><span class="counter">40</span>+</div>
+                        <div class="number"><span class="counter">20</span>+</div>
                         <p>Win Awards</p>
                     </div>
 
@@ -872,48 +627,48 @@
                         <div class="col-lg-4 col-md-6 col-6 wow zoomIn" data-wow-delay=".2s">
                             <div class="gallery-single">
                                 <div class="overlay">
-                                    <img src="assets/img/gallery/1.jpg" alt="">
-                                    <a href="assets/img/gallery/1.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <img src="assets/img/college/1.jpg" alt="">
+                                    <a href="assets/img/college/1.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-6 wow zoomIn" data-wow-delay=".4s">
                             <div class="gallery-single">
                                 <div class="overlay">
-                                    <img src="assets/img/gallery/2.jpg" alt="">
-                                    <a href="assets/img/gallery/2.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <img src="assets/img/college/2.jpg" alt="">
+                                    <a href="assets/img/college/2.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-6 wow zoomIn" data-wow-delay=".6s">
                             <div class="gallery-single">
                                 <div class="overlay">
-                                    <img src="assets/img/gallery/3.jpg" alt="">
-                                    <a href="assets/img/gallery/3.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <img src="assets/img/college/3.jpg" alt="">
+                                    <a href="assets/img/college/3.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-6 wow zoomIn" data-wow-delay="1s">
                             <div class="gallery-single">
                                 <div class="overlay">
-                                    <img src="assets/img/gallery/4.jpg" alt="">
-                                    <a href="assets/img/gallery/4.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <img src="assets/img/college/6.jpg" alt="">
+                                    <a href="assets/img/college/6.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-6 wow zoomIn" data-wow-delay="1.2s">
                             <div class="gallery-single">
                                 <div class="overlay">
-                                    <img src="assets/img/gallery/5.jpg" alt="">
-                                    <a href="assets/img/gallery/5.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <img src="assets/img/college/7.jpg" alt="">
+                                    <a href="assets/img/college/7.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-6 wow zoomIn" data-wow-delay="1.4s">
                             <div class="gallery-single">
                                 <div class="overlay">
-                                    <img src="assets/img/gallery/6.jpg" alt="">
-                                    <a href="assets/img/gallery/6.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <img src="assets/img/college/6.jpg" alt="">
+                                    <a href="assets/img/college/6.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -923,8 +678,8 @@
                     <div class="wow zoomIn" data-wow-delay=".8s">
                         <div class="gallery-single">
                             <div class="overlay">
-                                <img src="assets/img/gallery/7.jpg" alt="">
-                                <a href="assets/img/gallery/7.jpg" data-fancybox="photo" class="btn"><i class="far fa-search"></i></a>
+                                <img src="assets/img/college/4.jpg" alt="">
+                                <a href="assets/img/college/4.jpg" data-fancybox="photo" class="btn"><i class="far fa-search"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1034,146 +789,4 @@
         </div>
     </div>
 
-
-    <footer class="footer overlay section">
-
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-
-                        <div class="single-widget about">
-                            <div class="logo"><a href="#"><img src="assets/img/logo2.png" alt="#"></a></div>
-                            <p>We are many variations of passages of orem psum available but the majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable.</p>
-                            <ul class="list">
-                                <li><i class="far fa-phone"></i>(+1) 123 456 7894</li>
-                                <li><i class="far fa-envelope"></i> <a href="https://themes.themewild.com/cdn-cgi/l/email-protection#721b1c141d32170a131f021e175c111d1f"><span class="__cf_email__" data-cfemail="96fff8f0f9d6f3eef7fbe6faf3b8f5f9fb">[email&#160;protected]</span></a></li>
-                                <li><i class="far fa-map-marker-alt"></i>3783 Armbrester Drive,USA</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-
-                        <div class="single-widget useful-links">
-                            <h2>Important Links</h2>
-                            <ul>
-                                <li><a href="#"><i class="far fa-angle-double-right"></i>About Us</a></li>
-                                <li><a href="#"><i class="far fa-angle-double-right"></i>Support</a></li>
-                                <li><a href="#"><i class="far fa-angle-double-right"></i>Faq</a></li>
-                                <li><a href="#"><i class="far fa-angle-double-right"></i>Upcoming Events</a></li>
-                                <li><a href="#"><i class="far fa-angle-double-right"></i>Our Blogs</a></li>
-                                <li><a href="#"><i class="far fa-angle-double-right"></i>Terms & Conditions</a></li>
-                                <li><a href="#"><i class="far fa-angle-double-right"></i>Contact Us</a></li>
-                                <li><a href="#"><i class="far fa-angle-double-right"></i>Privacy Policy</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-
-                        <div class="single-widget latest-news">
-                            <h2>Latest Posts</h2>
-                            <div class="news-inner">
-                                <div class="single-news">
-                                    <img src="assets/img/blog/sm-1.jpg" alt="#">
-                                    <h4><a href="blog-single.html">Nam libero tempore cum soluta nobis est</a></h4>
-                                    <p><i class="far fa-calendar-alt"></i> July 02, 2021</p>
-                                </div>
-                                <div class="single-news">
-                                    <img src="assets/img/blog/sm-2.jpg" alt="#">
-                                    <h4><a href="blog-single.html">At vero et accusamus et iusto odio dignissimos</a></h4>
-                                    <p><i class="far fa-calendar-alt"></i> July 02, 2021</p>
-                                </div>
-                                <div class="single-news">
-                                    <img src="assets/img/blog/sm-3.jpg" alt="#">
-                                    <h4><a href="blog-single.html">Sed perspiciatis unde omnis iste natus sit </a></h4>
-                                    <p><i class="far fa-calendar-alt"></i> July 02, 2021</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-
-                        <div class="single-widget newsletter">
-                            <h2>Newsletter</h2>
-                            <div class="mail">
-                                <p>Subscribe to our newsletter, Get the latest updates and news from us!</p>
-                                <div class="form">
-                                    <input type="email" placeholder="Enter your email">
-                                    <button class="button" type="submit"><i class="far fa-paper-plane"></i></button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <ul class="social">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="bottom-head">
-                            <div class="row">
-                                <div class="col-12">
-
-                                    <div class="copyright">
-                                        <p>© Copyright 2021 <a href="#">National College</a> All Rights Reserved.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-
-
-    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/jquery.stellar.min.js"></script>
-
-    <script src="assets/js/facnybox.min.js"></script>
-
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <script src="assets/js/circle-progress.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <script src="assets/js/waypoints.min.js"></script>
-
-    <script src="assets/js/slicknav.min.js"></script>
-
-    <script src="assets/js/jquery.counterup.min.js"></script>
-
-    <script src="assets/js/easing.min.js"></script>
-
-    <script src="assets/js/wow.min.js"></script>
-
-    <script src="assets/js/jquery.scrollUp.min.js"></script>
-
-    <script src="assets/js/main.js"></script>
-</body>
-
-
-</html>
+@endsection

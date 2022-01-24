@@ -40,4 +40,8 @@ class BaseController extends Controller
     {
         return view('terms-condition');
     }
+
+    public function event(){
+        return view('event');
+    }
 }

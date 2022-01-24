@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\BaseController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\NoticeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +23,6 @@ Route::get('/faq', [BaseController::class, 'faq'])->name('faq');
 Route::get('/privacy-policy', [BaseController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/terms-of-use', [BaseController::class, 'termsOfUse'])->name('terms-of-use');
 
+// Resourse routes
+Route::resource('/event', EventController::class);
+Route::resource('/notice', NoticeController::class);

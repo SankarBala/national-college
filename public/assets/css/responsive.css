@@ -147,10 +147,10 @@ Version: 1.0
 	clear: both;
 	color: #fff;
 	margin: 0;
-	background: #00B16A;
+	background: #026f9b;
 }
 .slicknav_btn:hover{
-	background:#00B16A;
+	background:#026f9b;
 }
 .slicknav_nav .slicknav_item a i{
 	display:none;
@@ -263,7 +263,7 @@ Version: 1.0
 	font-size: 13px;
 }
 .testimonials {
-	background: #00B16A;
+	background: #026f9b;
 }
 .testimonials:before{
 	display:none;
