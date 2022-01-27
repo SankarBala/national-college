@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Notice;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\View;
+use Illuminate\Validation\Rule;
 
 class NoticeController extends Controller
 {
@@ -14,7 +17,8 @@ class NoticeController extends Controller
      */
     public function index()
     {
-        //
+        View::share('notices', Notice::all());
+        return view('admin.notice.index');
     }
 
     /**
@@ -24,7 +28,7 @@ class NoticeController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.notice.create');
     }
 
     /**
@@ -35,7 +39,23 @@ class NoticeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        Validator::make($request->all(), [
+            'title' => 'required|min:5',
+            'status' => ['required', Rule::in(["publish", "draft"])],
+            'attachment' => 'mimes:pdf,doc,docx,xls,xlsx,ppt,pptx,zip,rar,7z,jpg,jpeg,png,gif,bmp,svg,txt|max:4096',
+        ])->validate();
+
+        $notice = new Notice;
+        $notice->title = $request->title;
+        $notice->description = $request->description;
+        $notice->status = $request->status;
+        if ($request->has('attachment')) {
+            $notice->attachment = $request->attachment->store('public/notice');
+        }
+        $notice->save();
+
+        return redirect(route('admin.notice.index'))->with('success', 'Notice created successfully');
     }
 
     /**

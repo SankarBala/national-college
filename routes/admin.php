@@ -18,10 +18,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [AdminBaseController::class, 'index'])->name('admin.index');
+Route::get('/', [AdminBaseController::class, 'index'])->name('index');
 
 
 // Resourse routes
 // Route::resource('/event', EventController::class);
-// Route::resource('/notice', NoticeController::class);
+Route::resource('/notice', NoticeController::class)->names('notice');
 // Route::resource('/option', OptionController::class);

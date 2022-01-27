@@ -2,7 +2,7 @@
  <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="assets/img/logo.png" alt="NC" class="brand-image img-circle elevation-3"
+      <img src="{{asset('assets/img/logo.png')}}" alt="NC" class="brand-image img-circle elevation-3"
         style="opacity: .8">
       <span class="brand-text font-weight-light">National College</span>
     </a>
@@ -55,13 +55,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/fixed-footer.html" class="nav-link">
+                <a href="{{route('admin.notice.create')}}" class="nav-link">
                   <i class="fas fa-plus nav-icon"></i>
                   <p>Add new</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/fixed-footer.html" class="nav-link">
+                <a href="{{route('admin.notice.index')}}" class="nav-link">
                   <i class="far fa-list-alt nav-icon"></i>
                   <p>All notice</p>
                 </a>

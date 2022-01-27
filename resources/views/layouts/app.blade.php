@@ -160,7 +160,7 @@
 
 
                                 <div class="button">
-                                    <a href="contact.html" class="btn"><i class="far fa-pencil"></i>Apply Now</a>
+                                    <a target="_blank" href="{{route('admin.index')}}" class="btn">Dashboard</a>
                                 </div>
 
                             </div>
