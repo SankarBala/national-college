@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../plugins/toastr/toastr.min.css">
 @endpush
 
 @section('content')
@@ -19,26 +20,42 @@
                     <tr>
                         <th>Notice ID</th>
                         <th>Title</th>
-                        <th>Attachment</th>
                         <th>Publish Date</th>
+                        <th class="float-right">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($notices as $notice)
 
-                    <tr>
-                        <td>{{$notice->id}}</td>
-                        <td>{{$notice->title}}</td>
-                        <td>
-                            @if ($notice->attachment)
-                                <a href="{{asset($notice->attachment)}}" target="_blank">
-                                    <i class="fas fa-file-download"></i>
+                        <tr>
+                            <td>{{ $notice->id }}</td>
+                            <td>{{ $notice->title }}</td>
+                            <td>{{ $notice->created_at }}</td>
+                            <td class="float-right">
+                                @if ($notice->attachment)
+                                    <a class="btn btn-info" href="{{ asset('storage/' . $notice->attachment) }}"
+                                        target="_blank">
+                                        View
+                                    </a>
+                                    {{-- <a class="btn btn-success" href="{{ asset('storage/' . $notice->attachment) }}"
+                                        download>
+                                        Download
+                                    </a> --}}
+                                @endif
+                                <a class="btn btn-warning" href="{{ route('admin.notice.edit', $notice->id) }}">
+                                    Edit
                                 </a>
-                            @endif
-                        </td>
-                        <td>{{$notice->created_at}}</td>
-                    </tr>
-                        
+
+                                <form method="post" action="{{ route('admin.notice.destroy', $notice->id) }}"
+                                    style="display: inline;">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input class="btn btn-danger" type="submit" value="Delete" />
+                                </form>
+
+                            </td>
+                        </tr>
+
                     @endforeach
                 </tbody>
             </table>
@@ -46,7 +63,9 @@
         <!-- /.card-body -->
     </div>
     <!-- /.card -->
-
+    sdfsaf
+    {{ session('success') }}
+    sadfsaf
 @endsection
 
 @push('scripts')
@@ -63,6 +82,7 @@
     <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
     <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="../../plugins/toastr/toastr.min.js"></script>
 
     <!-- Page specific script -->
     <script>
@@ -90,5 +110,10 @@
                 "responsive": true,
             });
         });
+
+        @isset($success)
+            toastr.success('{{ $success }}');
+        
+        @endisset
     </script>
 @endpush
