@@ -15,38 +15,21 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-
-    <link rel="stylesheet" href="assets/css/slicknav.min.css">
-
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-    <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/fontawesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/jquery.fancybox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/slicknav.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/default.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
 </head>
 
 <body>
 
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader-page"></div>
-            <div class="loader-page"></div>
-            <div class="loader-page"></div>
-        </div>
-    </div>
-
-
     <header class="header">
-
         <div class="topbar">
             <div class="container">
                 <div class="row">
@@ -64,8 +47,6 @@
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                             </ul>
 
 
@@ -105,7 +86,9 @@
                         <div class="header-widget">
                             <div class="single-widget">
                                 <i class="far fa-phone"></i>
-                                <h4>Call Now<span>+880-1745-993722</span></h4>
+                                
+
+                                <h4>Call Now<span>{{option('name')}}</span></h4>
                             </div>
                             <div class="single-widget">
                                 <i class="far fa-envelope"></i>
@@ -132,20 +115,9 @@
 
                                 <ul id="nav" class="nav menu navbar-nav">
                                     <li class=""><a href="index-2.html">Home</a></li>
-                                    <li><a href="#">Activities<i class="far fa-angle-down"></i></a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">Teachers<i class="far fa-angle-right"></i></a>
-                                                <ul class="dropdown submenu">
-                                                    <li><a href="teacher.html">Teachers One</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                        </ul>
-                                    </li>
                                     <li><a href="#">Admission<i class="far fa-angle-down"></i></a>
                                         <ul class="dropdown">
-                                            <li><a href="events.html">Events</a></li>
-                                            <li><a href="event-single.html">Event Single</a></li>
+                                            <li><a href="">Get Admission</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Notice<i class="far fa-angle-down"></i></a>

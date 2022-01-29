@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\View;
+use Illuminate\Validation\Rule;
 
 class EventController extends Controller
 {
@@ -14,7 +17,8 @@ class EventController extends Controller
      */
     public function index()
     {
-        //
+        View::share('events', Event::all());
+        return view('admin.event.index');
     }
 
     /**
@@ -24,7 +28,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.event.create');
     }
 
     /**
@@ -35,7 +39,28 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        Validator::make($request->all(), [
+            'title' => 'required|min:5',
+            'attachment' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ])->validate();
+
+
+        $event = new Event;
+        $event->title = $request->title;
+        $event->description = $request->description;
+        if ($request->has('attachment')) {
+
+            $fileName = time() . '.' . $request->attachment->extension();
+            $request->attachment->move(public_path('storage/event'), $fileName);
+            $event->event_picture = "event/" . $fileName;
+        }
+        $event->startTime = trim(explode('-', $request->eventTimeRange)[0]);
+        $event->endTime = trim(explode('-', $request->eventTimeRange)[1]);
+
+        $event->save();
+
+        return redirect(route('admin.event.index'))->with('success', 'Event created successfully');
     }
 
     /**
@@ -46,7 +71,7 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        //
+        dd('EventController@show');
     }
 
     /**
@@ -55,9 +80,10 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event)
+    public function edit(Event $event, $id)
     {
-        //
+        View::share('event', $event->find($id));
+        return view('admin.event.edit');
     }
 
     /**
@@ -67,9 +93,31 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Event $event)
-    {
-        //
+    public function update(Request $request, Event $event, $id)
+    { 
+        Validator::make($request->all(), [
+            'title' => 'required|min:5',
+            'attachment' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ])->validate();
+
+        
+        $event = $event->find($id);
+        $event->title = $request->title;
+        $event->description = $request->description;
+        if ($request->has('attachment')) {
+
+            $fileName = time() . '.' . $request->attachment->extension();
+            $request->attachment->move(public_path('storage/event'), $fileName);
+            $event->event_picture = "event/" . $fileName;
+        }
+        $event->startTime = trim(explode('-', $request->eventTimeRange)[0]);
+        $event->endTime = trim(explode('-', $request->eventTimeRange)[1]);
+
+        $event->save();
+
+        return redirect(route('admin.event.index'))->with('success', 'Event created successfully');
+
+
     }
 
     /**
@@ -78,8 +126,9 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event)
+    public function destroy(Event $event, $id)
     {
-        //
+        $event->find($id)->delete();
+        return redirect()->route('admin.event.index');
     }
 }

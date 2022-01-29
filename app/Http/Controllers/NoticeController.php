@@ -70,7 +70,7 @@ class NoticeController extends Controller
      */
     public function show(Notice $notice)
     {
-        dd('ff');
+        dd('NoticeController@show');
     }
 
     /**

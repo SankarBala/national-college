@@ -79,13 +79,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/fixed-footer.html" class="nav-link">
+                <a href="{{route('admin.event.create')}}" class="nav-link">
                   <i class="fas fa-plus nav-icon"></i>
                   <p>Add new</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/fixed-footer.html" class="nav-link">
+                <a href="{{route('admin.event.index')}}" class="nav-link">
                   <i class="far fa-list-alt nav-icon"></i>
                   <p>All event</p>
                 </a>
