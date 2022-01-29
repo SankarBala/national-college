@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Option;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class OptionController extends Controller
 {
@@ -19,7 +20,7 @@ class OptionController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.settings');
     }
 
     /**
@@ -40,7 +41,12 @@ class OptionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        print_r($request->all());
+
+        foreach ($request->all() as $key => $value) {
+            option($key, $value);
+        }
+        return back();
     }
 
     /**

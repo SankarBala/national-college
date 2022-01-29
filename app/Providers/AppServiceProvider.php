@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Notice;
 use App\Models\Option;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -23,8 +25,10 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(Request $request)
     {
-        View::share('options', options('test'));
+        if(!($request->is('admin/*') || $request->is('admin'))) {
+           view()->share('notices', Notice::take(8)->get());
+        }
     }
 }

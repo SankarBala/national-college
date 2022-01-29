@@ -1,7 +1,5 @@
 <?php
 
-namespace App\Http\Helper;
-
 use App\Models\Option as ModelsOption;
 
 class Option
@@ -30,17 +28,11 @@ class Option
 }
 
 
-function get_option($key)
+function option($key, $value = null)
 {
-    return Option::get($key);
-}
-
-function set_option($key, $value)
-{
-    Option::set($key, $value);
-}
-
-function option()
-{
-    return "holl";
+    if ($value === null) {
+        return Option::get($key);
+    } else {
+        Option::set($key, $value);
+    }
 }

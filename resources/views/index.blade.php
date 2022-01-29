@@ -10,7 +10,11 @@
                         <div class="col-lg-8 col-md-8 col-12">
                             <div class="slider-text">
                                 <h1>Best Educational Institute <span>Academic And Proffesional</span></h1>
-                                <p>Besides standard lesson plan, expert and experienced teachers, teaching and strict administration, a well location and surrounding of the institution is a prerequisite undoubtedly. In view of this, National College has been set up in a learning oriented distinct building at Gulshan-Baridhara aristocratic area to and from where one can communicate easily.</p>
+                                <p>Besides standard lesson plan, expert and experienced teachers, teaching and strict
+                                    administration, a well location and surrounding of the institution is a prerequisite
+                                    undoubtedly. In view of this, National College has been set up in a learning oriented
+                                    distinct building at Gulshan-Baridhara aristocratic area to and from where one can
+                                    communicate easily.</p>
                                 <div class="button">
                                     <a href="courses.html" class="btn primary">Our Courses</a>
                                     <a href="about.html" class="btn">Learn More</a>
@@ -33,7 +37,9 @@
                 <div class="col-12 wow zoomIn">
                     <div class="section-title">
                         <h2>Check <span>Our Best</span> Feature</h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using orem psum is that it has a more-or-less normal distribution.</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using orem psum is that it has a more-or-less normal
+                            distribution.</p>
                     </div>
                 </div>
             </div>
@@ -90,14 +96,10 @@
                                 </div>
 
                                 <form class="p-2" action="#">
-                                    <iframe 
-                                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNationalCollege.edu.Bangladesh&tabs=timeline&width=480&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
-                                        width="100%"
-                                        height="500px" 
-                                        style="border:none;overflow:hidden"
-                                        scrolling="no"
-                                        frameborder="0" 
-                                        allowfullscreen="true"
+                                    <iframe
+                                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNationalCollege.edu.Bangladesh&tabs=timeline&width=480&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                        width="100%" height="500px" style="border:none;overflow:hidden" scrolling="no"
+                                        frameborder="0" allowfullscreen="true"
                                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                                     </iframe>
                                 </form>
@@ -109,7 +111,11 @@
                             <div class="enroll-right">
                                 <div class="section-title">
                                     <h2>We Have Experienced Proffesionals And We Do Our Best To Achieve Your Goal.</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't look even slightly believable. If you are going to use a passage of Lorem
+                                        Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
+                                        text. </p>
                                 </div>
                             </div>
 
@@ -162,7 +168,9 @@
                 <div class="col-12 wow zoomIn">
                     <div class="section-title">
                         <h2>Explore <span>Popular</span> Courses</h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution.</p>
                     </div>
                 </div>
             </div>
@@ -187,7 +195,8 @@
                                 </div>
                             </div>
                             <h4><a href="course-single.html">Business Management</a></h4>
-                            <p>There are many variations of passages available, but the majority have suffered alteration in some form, by injected humour, or randomised words believable. </p>
+                            <p>There are many variations of passages available, but the majority have suffered alteration in
+                                some form, by injected humour, or randomised words believable. </p>
                         </div>
                         <div class="course-meta">
                             <div class="meta-left">
@@ -219,7 +228,8 @@
                                 </div>
                             </div>
                             <h4><a href="course-single.html">Chemical Engineering</a></h4>
-                            <p>There are many variations of passages available, but the majority have suffered alteration in some form, by injected humour, or randomised words believable. </p>
+                            <p>There are many variations of passages available, but the majority have suffered alteration in
+                                some form, by injected humour, or randomised words believable. </p>
                         </div>
                         <div class="course-meta">
                             <div class="meta-left">
@@ -251,7 +261,8 @@
                                 </div>
                             </div>
                             <h4><a href="course-single.html">Civil Engineering</a></h4>
-                            <p>There are many variations of passages available, but the majority have suffered alteration in some form, by injected humour, or randomised words believable. </p>
+                            <p>There are many variations of passages available, but the majority have suffered alteration in
+                                some form, by injected humour, or randomised words believable. </p>
                         </div>
                         <div class="course-meta">
                             <div class="meta-left">
@@ -283,7 +294,8 @@
                                 </div>
                             </div>
                             <h4><a href="course-single.html">Food Science</a></h4>
-                            <p>There are many variations of passages available, but the majority have suffered alteration in some form, by injected humour, or randomised words believable. </p>
+                            <p>There are many variations of passages available, but the majority have suffered alteration in
+                                some form, by injected humour, or randomised words believable. </p>
                         </div>
                         <div class="course-meta">
                             <div class="meta-left">
@@ -315,7 +327,8 @@
                                 </div>
                             </div>
                             <h4><a href="course-single.html">Health Studies</a></h4>
-                            <p>There are many variations of passages available, but the majority have suffered alteration in some form, by injected humour, or randomised words believable. </p>
+                            <p>There are many variations of passages available, but the majority have suffered alteration in
+                                some form, by injected humour, or randomised words believable. </p>
                         </div>
                         <div class="course-meta">
                             <div class="meta-left">
@@ -347,7 +360,8 @@
                                 </div>
                             </div>
                             <h4><a href="course-single.html">Architechture And Design</a></h4>
-                            <p>There are many variations of passages available, but the majority have suffered alteration in some form, by injected humour, or randomised words believable. </p>
+                            <p>There are many variations of passages available, but the majority have suffered alteration in
+                                some form, by injected humour, or randomised words believable. </p>
                         </div>
                         <div class="course-meta">
                             <div class="meta-left">
@@ -371,7 +385,10 @@
                     <div class="cta-inner overlay">
                         <div class="text-content">
                             <h2>20% Offer Running - Join Today For Your Course</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quis nostrum exercitationem.</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                                aut fugit quis nostrum exercitationem.</p>
                             <div class="button">
                                 <a class="btn primary wow fadeInUp" href="contact.html">Register Now</a>
                             </div>
@@ -389,7 +406,9 @@
                 <div class="col-12 wow zoomIn">
                     <div class="section-title">
                         <h2>Meet Our <span>Teachers</span></h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution.</p>
                     </div>
                 </div>
             </div>
@@ -431,7 +450,8 @@
                     <div class="single-team">
                         <img src="assets/img/team/3.jpg" alt="#">
                         <div class="team-hover">
-                            <h4 class="name">Richard R Myers<span class="work">Associate Professor</span></h4>
+                            <h4 class="name">Richard R Myers<span class="work">Associate
+                                    Professor</span></h4>
                             <ul class="social">
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -480,7 +500,9 @@
                                     <i class="fas fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected humour, or randomised words which don't
+                                    look even slightly believable.</p>
                             </div>
                         </div>
 
@@ -496,7 +518,9 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected humour, or randomised words which don't
+                                    look even slightly believable.</p>
                             </div>
                         </div>
 
@@ -512,7 +536,9 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                    suffered alteration in some form, by injected humour, or randomised words which don't
+                                    look even slightly believable.</p>
                             </div>
                         </div>
 
@@ -529,7 +555,9 @@
                 <div class="col-12 wow zoomIn">
                     <div class="section-title">
                         <h2>Our Upcoming <span>Events</span></h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution.</p>
                     </div>
                 </div>
             </div>
@@ -540,7 +568,8 @@
                         <div class="single-event">
                             <div class="head overlay">
                                 <img src="assets/img/college/16.jpg" alt="#">
-                                <a href="assets/img/college/16.jpg" data-fancybox="photo" class="btn"><i class="far fa-search"></i></a>
+                                <a href="assets/img/college/16.jpg" data-fancybox="photo" class="btn"><i
+                                        class="far fa-search"></i></a>
                             </div>
                             <div class="event-content">
                                 <div class="meta">
@@ -550,7 +579,8 @@
                                 <h4><a href="event-single.html">Event Title</a></h4>
                                 <p>Event description</p>
                                 <div class="button">
-                                    <a href="event-single.html" class="btn">Join Event <i class="far fa-long-arrow-right"></i></a>
+                                    <a href="event-single.html" class="btn">Join Event <i
+                                            class="far fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -558,7 +588,7 @@
 
 
 
-                     
+
 
                     </div>
                 </div>
@@ -617,7 +647,9 @@
                 <div class="col-12 wow zoomIn">
                     <div class="section-title">
                         <h2>Our <span>Gallery</span></h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution.</p>
                     </div>
                 </div>
             </div>
@@ -628,7 +660,8 @@
                             <div class="gallery-single">
                                 <div class="overlay">
                                     <img src="assets/img/college/1.jpg" alt="">
-                                    <a href="assets/img/college/1.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/college/1.jpg" data-fancybox="gallery" class="btn"><i
+                                            class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -636,7 +669,8 @@
                             <div class="gallery-single">
                                 <div class="overlay">
                                     <img src="assets/img/college/2.jpg" alt="">
-                                    <a href="assets/img/college/2.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/college/2.jpg" data-fancybox="gallery" class="btn"><i
+                                            class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -644,7 +678,8 @@
                             <div class="gallery-single">
                                 <div class="overlay">
                                     <img src="assets/img/college/3.jpg" alt="">
-                                    <a href="assets/img/college/3.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/college/3.jpg" data-fancybox="gallery" class="btn"><i
+                                            class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -652,7 +687,8 @@
                             <div class="gallery-single">
                                 <div class="overlay">
                                     <img src="assets/img/college/6.jpg" alt="">
-                                    <a href="assets/img/college/6.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/college/6.jpg" data-fancybox="gallery" class="btn"><i
+                                            class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -660,7 +696,8 @@
                             <div class="gallery-single">
                                 <div class="overlay">
                                     <img src="assets/img/college/7.jpg" alt="">
-                                    <a href="assets/img/college/7.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/college/7.jpg" data-fancybox="gallery" class="btn"><i
+                                            class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -668,7 +705,8 @@
                             <div class="gallery-single">
                                 <div class="overlay">
                                     <img src="assets/img/college/6.jpg" alt="">
-                                    <a href="assets/img/college/6.jpg" data-fancybox="gallery" class="btn"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/college/6.jpg" data-fancybox="gallery" class="btn"><i
+                                            class="far fa-search"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -679,7 +717,8 @@
                         <div class="gallery-single">
                             <div class="overlay">
                                 <img src="assets/img/college/4.jpg" alt="">
-                                <a href="assets/img/college/4.jpg" data-fancybox="photo" class="btn"><i class="far fa-search"></i></a>
+                                <a href="assets/img/college/4.jpg" data-fancybox="photo" class="btn"><i
+                                        class="far fa-search"></i></a>
                             </div>
                         </div>
                     </div>
@@ -688,14 +727,16 @@
         </div>
     </section>
 
-
+{{-- 
     <section class="blog section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
                         <h2>Our Latest <span>News</span></h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution.</p>
                     </div>
                 </div>
             </div>
@@ -710,15 +751,18 @@
                             <img src="assets/img/blog/1.jpg" alt="#">
                         </div>
                         <div class="blog-content">
-                            <h4 class="blog-title"><a href="blog-single.html">Sed ut perspiciatis unde omni natus</a></h4>
+                            <h4 class="blog-title"><a href="blog-single.html">Sed ut perspiciatis unde omni natus</a>
+                            </h4>
                             <div class="blog-info">
                                 <a href="#"><i class="far fa-user"></i>By Admin</a>
                                 <a href="#"><i class="far fa-folder-open"></i>Learning</a>
                                 <a href="#"><i class="far fa-heart"></i>30K</a>
                             </div>
-                            <p>There are many variations of passages of orem psum available but the majority have suffered alteration in some form.</p>
+                            <p>There are many variations of passages of orem psum available but the majority have suffered
+                                alteration in some form.</p>
                             <div class="button">
-                                <a href="blog-single.html" class="btn">Read More<i class="far fa-angle-double-right"></i></a>
+                                <a href="blog-single.html" class="btn">Read More<i
+                                        class="far fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -740,9 +784,11 @@
                                 <a href="#"><i class="far fa-folder-open"></i>Learning</a>
                                 <a href="#"><i class="far fa-heart"></i>30K</a>
                             </div>
-                            <p>There are many variations of passages of orem psum available but the majority have suffered alteration in some form.</p>
+                            <p>There are many variations of passages of orem psum available but the majority have suffered
+                                alteration in some form.</p>
                             <div class="button">
-                                <a href="blog-single.html" class="btn">Read More<i class="far fa-angle-double-right"></i></a>
+                                <a href="blog-single.html" class="btn">Read More<i
+                                        class="far fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -758,15 +804,18 @@
                             <img src="assets/img/blog/3.jpg" alt="#">
                         </div>
                         <div class="blog-content">
-                            <h4 class="blog-title"><a href="blog-single.html">Nam libero tempore cum soluta nobis</a></h4>
+                            <h4 class="blog-title"><a href="blog-single.html">Nam libero tempore cum soluta nobis</a>
+                            </h4>
                             <div class="blog-info">
                                 <a href="#"><i class="far fa-user"></i>By Admin</a>
                                 <a href="#"><i class="far fa-folder-open"></i>Learning</a>
                                 <a href="#"><i class="far fa-heart"></i>30K</a>
                             </div>
-                            <p>There are many variations of passages of orem psum available but the majority have suffered alteration in some form.</p>
+                            <p>There are many variations of passages of orem psum available but the majority have suffered
+                                alteration in some form.</p>
                             <div class="button">
-                                <a href="blog-single.html" class="btn">Read More<i class="far fa-angle-double-right"></i></a>
+                                <a href="blog-single.html" class="btn">Read More<i
+                                        class="far fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -774,17 +823,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     <div class="clients">
         <div class="container">
             <div class="client-slider owl-carousel owl-theme">
-                <img src="assets/img/clients/1.png" alt="">
-                <img src="assets/img/clients/2.png" alt="">
-                <img src="assets/img/clients/3.png" alt="">
-                <img src="assets/img/clients/4.png" alt="">
-                <img src="assets/img/clients/5.png" alt="">
+                {{-- <img src="" alt=""> --}}
             </div>
         </div>
     </div>

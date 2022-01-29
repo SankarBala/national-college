@@ -15,16 +15,16 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/fontawesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/jquery.fancybox.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/slicknav.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/default.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/jquery.fancybox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/default.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 </head>
 
 <body>
@@ -36,7 +36,10 @@
                     <div class="col-lg-8 col-12">
                         <marquee direction="left" style="color:white">
                             <ul class="nav">
-                                <li class=""><a class="my-0 py-0" href="#">Recent notice go here</a></li>
+                                @foreach ($notices as $notice)
+                                    <li class=""><a class="my-0 py-0"
+                                            href="#">{{ $notice->title }}</a></li>
+                                @endforeach
                             </ul>
                         </marquee>
                     </div>
@@ -58,8 +61,10 @@
                                     <div class="header_search_content_inner">
                                         <a href="#" class="close_btn"><i class="fal fa-times"></i></a>
                                         <form id="searchbox" method="get" action="#">
-                                            <input class="search_query" type="text" id="search_query_top" name="s" placeholder="Enter Keyword" value="">
-                                            <button type="submit" class="btn close-search"><i class="fal fa-search"></i></button>
+                                            <input class="search_query" type="text" id="search_query_top" name="s"
+                                                placeholder="Enter Keyword" value="">
+                                            <button type="submit" class="btn close-search"><i
+                                                    class="fal fa-search"></i></button>
                                         </form>
                                     </div>
                                 </div>
@@ -77,7 +82,8 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="logo">
-                            <a href="index-2.html"><img src="assets/img/logo.png" alt="#" width="100px" height=""></a>
+                            <a href="{{ route('index') }}"><img src="assets/img/logo.png" alt="#" width="100px"
+                                    height=""></a>
                         </div>
                         <div class="mobile-menu"></div>
                     </div>
@@ -86,17 +92,18 @@
                         <div class="header-widget">
                             <div class="single-widget">
                                 <i class="far fa-phone"></i>
-                                
 
-                                <h4>Call Now<span>{{option('name')}}</span></h4>
+
+                                <h4>Call Now<span>{{ option('phone') }}</span></h4>
                             </div>
                             <div class="single-widget">
                                 <i class="far fa-envelope"></i>
-                                <h4>Email Us<a href="mailto:query@nationalcollege.edu.bd"><span><span class="__cf_email__" data-cfemail="">query@nationalcollege.edu.bd</span></span></a></h4>
+                                <h4>Email Us<a href="mailto:{{ option('email') }}"><span><span class="__cf_email__"
+                                                data-cfemail="">{{ option('email') }}</span></span></a></h4>
                             </div>
                             <div class="single-widget">
                                 <i class="far fa-map-marker-alt"></i>
-                                <h4>Our Location<span>Pragati Sharanee, Badda, Gulshan, Dhaka-1212</span></h4>
+                                <h4>Our Location<span>{{ option('address') }}</span></h4>
                             </div>
                         </div>
 
@@ -114,7 +121,7 @@
                             <div class="navbar-collapse">
 
                                 <ul id="nav" class="nav menu navbar-nav">
-                                    <li class=""><a href="index-2.html">Home</a></li>
+                                    <li class=""><a href="{{ route('index') }}">Home</a></li>
                                     <li><a href="#">Admission<i class="far fa-angle-down"></i></a>
                                         <ul class="dropdown">
                                             <li><a href="">Get Admission</a></li>
@@ -125,14 +132,15 @@
                                             <li><a href="blogs-left-sidebar.html">All Notice</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{route('event.index')}}">Events</a></li>
-                                    <li><a href="{{route('about-us')}}">About Us</a></li>
-                                    <li><a href="{{route('contact-us')}}">Contact Us</a></li>
+                                    <li><a href="{{ route('event.index') }}">Events</a></li>
+                                    <li><a href="{{ route('about-us') }}">About Us</a></li>
+                                    <li><a href="{{ route('contact-us') }}">Contact Us</a></li>
                                 </ul>
 
 
                                 <div class="button">
-                                    <a target="_blank" href="{{route('admin.index')}}" class="btn">Dashboard</a>
+                                    <a target="_blank" href="{{ route('admin.index') }}"
+                                        class="btn">Dashboard</a>
                                 </div>
 
                             </div>
@@ -152,67 +160,53 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12">
 
                         <div class="single-widget about">
                             <div class="logo"><a href="#"><img src="assets/img/logo2.png" alt="#"></a></div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed dolorem ducimus!</p>
+                            <p></p>
                             <ul class="list">
-                                <li><i class="far fa-phone"></i>+880-1745-993722</li>
-                                <li><i class="far fa-envelope"></i><a href="mailto:query@nationalcollege.edu.bd"><span class="" data-cfemail="">query@nationalcollege.edu.bd</span></a></li>
-                                <li><i class="far fa-map-marker-alt"></i>3783 Armbrester Drive,USA</li>
+                                <li><i class="far fa-phone"></i>{{option('phone')}}</li>
+                                <li><i class="far fa-envelope"></i><a href="mailto:{{option('email')}}"><span
+                                            class=""
+                                            data-cfemail="">{{option('email')}}</span></a></li>
+                                <li><i class="far fa-map-marker-alt"></i>{{option('address')}}</li>
                             </ul>
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12">
 
                         <div class="single-widget useful-links">
                             <h2>Important Links</h2>
                             <ul>
-                                <li><a href="{{route('about-us')}}"><i class="far fa-angle-double-right"></i>About Us</a></li>
-                                <li><a href="{{route('faq')}}"><i class="far fa-angle-double-right"></i>Faq</a></li>
-                                <li><a href="{{route('faq')}}"><i class="far fa-angle-double-right"></i>Upcoming Events</a></li>
-                                <li><a href="{{route('terms-of-use')}}"><i class="far fa-angle-double-right"></i>Terms & Conditions</a></li>
-                                <li><a href="{{route('contact-us')}}"><i class="far fa-angle-double-right"></i>Contact Us</a></li>
-                                <li><a href="{{route('privacy-policy')}}"><i class="far fa-angle-double-right"></i>Privacy Policy</a></li>
+                                <li><a href="{{ route('about-us') }}"><i class="far fa-angle-double-right"></i>About
+                                        Us</a></li>
+                                <li><a href="{{ route('faq') }}"><i class="far fa-angle-double-right"></i>Faq</a>
+                                </li>
+                                <li><a href="{{ route('faq') }}"><i class="far fa-angle-double-right"></i>Upcoming
+                                        Events</a></li>
+                                <li><a href="{{ route('terms-of-use') }}"><i
+                                            class="far fa-angle-double-right"></i>Terms & Conditions</a></li>
+                                <li><a href="{{ route('contact-us') }}"><i
+                                            class="far fa-angle-double-right"></i>Contact Us</a></li>
+                                <li><a href="{{ route('privacy-policy') }}"><i
+                                            class="far fa-angle-double-right"></i>Privacy Policy</a></li>
                             </ul>
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-
-                        <div class="single-widget latest-news">
-                            <h2>Latest Posts</h2>
-                            <div class="news-inner">
-                                <div class="single-news">
-                                    <img src="assets/img/blog/sm-1.jpg" alt="#">
-                                    <h4><a href="blog-single.html">Nam libero tempore cum soluta nobis est</a></h4>
-                                    <p><i class="far fa-calendar-alt"></i> July 02, 2021</p>
-                                </div>
-                                <div class="single-news">
-                                    <img src="assets/img/blog/sm-2.jpg" alt="#">
-                                    <h4><a href="blog-single.html">At vero et accusamus et iusto odio dignissimos</a></h4>
-                                    <p><i class="far fa-calendar-alt"></i> July 02, 2021</p>
-                                </div>
-                                <div class="single-news">
-                                    <img src="assets/img/blog/sm-3.jpg" alt="#">
-                                    <h4><a href="blog-single.html">Sed perspiciatis unde omnis iste natus sit </a></h4>
-                                    <p><i class="far fa-calendar-alt"></i> July 02, 2021</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
+                    
+                    <div class="col-lg-4 col-md-6 col-12">
 
                         <div class="single-widget newsletter">
                             <h2>Newsletter</h2>
                             <div class="mail">
-                                <p>Subscribe to our newsletter, Get the latest updates and news from us!</p>
+                                <p>Subscribe now</p>
                                 <div class="form">
                                     <input type="email" placeholder="Enter your email">
-                                    <button class="button" type="submit"><i class="far fa-paper-plane"></i></button>
+                                    <button class="button" type="submit"><i
+                                            class="far fa-paper-plane"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -222,8 +216,6 @@
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                         </ul>
 
                     </div>
@@ -241,7 +233,7 @@
                                 <div class="col-12">
 
                                     <div class="copyright">
-                                        <p>© Copyright 2021 <a href="#">National College</a> All Rights Reserved.</p>
+                                        <p>© Copyright 2021 <a href="#">{{option('brand') }}</a> All Rights Reserved.</p>
                                     </div>
 
                                 </div>
