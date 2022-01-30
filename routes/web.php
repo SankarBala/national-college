@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\EventController;
-use App\Http\Controllers\NoticeController;
-use App\Http\Controllers\OptionController;
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +25,6 @@ Route::get('/privacy-policy', [BaseController::class, 'privacyPolicy'])->name('p
 Route::get('/terms-of-use', [BaseController::class, 'termsOfUse'])->name('terms-of-use');
 
 // Resourse routes
-Route::resource('/event', EventController::class);
-Route::resource('/notice', NoticeController::class);
-Route::resource('/option', OptionController::class);
+Route::resource('/event', EventController::class)->only('index', 'show');
+Route::resource('/notice', NoticeController::class)->names('notice');
+Route::resource('/message', MessageController::class)->only(['store'])->names('message');

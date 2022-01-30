@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/default.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    @stack('styles')
 </head>
 
 <body>
@@ -38,7 +39,7 @@
                             <ul class="nav">
                                 @foreach ($notices as $notice)
                                     <li class=""><a class="my-0 py-0"
-                                            href="#">{{ $notice->title }}</a></li>
+                                            href="{{route('notice.show', $notice)}}">{{ $notice->title }}</a></li>
                                 @endforeach
                             </ul>
                         </marquee>
@@ -82,7 +83,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="logo">
-                            <a href="{{ route('index') }}"><img src="assets/img/logo.png" alt="#" width="100px"
+                            <a href="{{ route('index') }}"><img src="{{asset('assets/img/logo.png')}}" alt="#" width="100px"
                                     height=""></a>
                         </div>
                         <div class="mobile-menu"></div>
@@ -129,7 +130,7 @@
                                     </li>
                                     <li><a href="#">Notice<i class="far fa-angle-down"></i></a>
                                         <ul class="dropdown">
-                                            <li><a href="blogs-left-sidebar.html">All Notice</a></li>
+                                            <li><a href={{route('notice.index')}}>All Notice</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{ route('event.index') }}">Events</a></li>
@@ -166,11 +167,11 @@
                             <div class="logo"><a href="#"><img src="assets/img/logo2.png" alt="#"></a></div>
                             <p></p>
                             <ul class="list">
-                                <li><i class="far fa-phone"></i>{{option('phone')}}</li>
-                                <li><i class="far fa-envelope"></i><a href="mailto:{{option('email')}}"><span
-                                            class=""
-                                            data-cfemail="">{{option('email')}}</span></a></li>
-                                <li><i class="far fa-map-marker-alt"></i>{{option('address')}}</li>
+                                <li><i class="far fa-phone"></i>{{ option('phone') }}</li>
+                                <li><i class="far fa-envelope"></i><a href="mailto:{{ option('email') }}"><span
+                                            class="" data-cfemail="">{{ option('email') }}</span></a>
+                                </li>
+                                <li><i class="far fa-map-marker-alt"></i>{{ option('address') }}</li>
                             </ul>
                         </div>
 
@@ -196,27 +197,12 @@
                         </div>
 
                     </div>
-                    
+
                     <div class="col-lg-4 col-md-6 col-12">
 
-                        <div class="single-widget newsletter">
-                            <h2>Newsletter</h2>
-                            <div class="mail">
-                                <p>Subscribe now</p>
-                                <div class="form">
-                                    <input type="email" placeholder="Enter your email">
-                                    <button class="button" type="submit"><i
-                                            class="far fa-paper-plane"></i></button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <ul class="social">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                        </ul>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2709.088365102505!2d90.4242365071291!3d23.776576747510052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d23.776842799999997!2d90.4257303!4m5!1s0x3755c7ba09302d9b%3A0x9155f2b042302111!2snational%20college!3m2!1d23.7768329!2d90.4254472!5e0!3m2!1sbn!2sbd!4v1643524943150!5m2!1sbn!2sbd"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                     </div>
                 </div>
@@ -233,7 +219,9 @@
                                 <div class="col-12">
 
                                     <div class="copyright">
-                                        <p>© Copyright 2021 <a href="#">{{option('brand') }}</a> All Rights Reserved.</p>
+                                        <p>© Copyright 2021 <a href="#">{{ option('brand') }}</a> All Rights
+                                            Reserved.
+                                        </p>
                                     </div>
 
                                 </div>
@@ -275,6 +263,7 @@
     <script src="assets/js/jquery.scrollUp.min.js"></script>
 
     <script src="assets/js/main.js"></script>
+    @stack('scripts')
 </body>
 
 

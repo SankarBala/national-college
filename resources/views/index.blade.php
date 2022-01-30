@@ -16,8 +16,8 @@
                                     distinct building at Gulshan-Baridhara aristocratic area to and from where one can
                                     communicate easily.</p>
                                 <div class="button">
-                                    <a href="courses.html" class="btn primary">Our Courses</a>
-                                    <a href="about.html" class="btn">Learn More</a>
+                                    {{-- <a href="" class="btn primary">Our Courses</a>
+                                    <a href="" class="btn">Learn More</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
             <div class="row">
                 <div class="col-12 wow zoomIn">
                     <div class="section-title">
-                        <h2>Explore <span>Popular</span> Courses</h2>
+                        <h2> <span> Explore Our Popular courses</span></h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page
                             when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                             distribution.</p>
@@ -413,71 +413,22 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-12 wow fadeIn" data-wow-delay="0.4s">
-
-                    <div class="single-team">
-                        <img src="assets/img/team/1.jpg" alt="#">
-                        <div class="team-hover">
-                            <h4>Ruth A Chance<span>Associate Professor</span></h4>
-                            <ul class="social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
+                @foreach ([1, 2, 3, 4] as $item)
+                    <div class="col-lg-3 col-md-6 col-12 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="single-team">
+                            <img src="assets/img/team/1.jpg" alt="#">
+                            <div class="team-hover">
+                                <h4>Teacher name<span>Designation</span></h4>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 wow fadeIn" data-wow-delay="0.6s">
-
-                    <div class="single-team active">
-                        <img src="assets/img/team/2.jpg" alt="#">
-                        <div class="team-hover">
-                            <h4 class="name">Melania Thompson<span class="work">Professor</span></h4>
-                            <ul class="social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 wow fadeIn" data-wow-delay="0.8s">
-
-                    <div class="single-team">
-                        <img src="assets/img/team/3.jpg" alt="#">
-                        <div class="team-hover">
-                            <h4 class="name">Richard R Myers<span class="work">Associate
-                                    Professor</span></h4>
-                            <ul class="social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 wow fadeIn" data-wow-delay="1s">
-
-                    <div class="single-team">
-                        <img src="assets/img/team/4.jpg" alt="#">
-                        <div class="team-hover">
-                            <h4 class="name">Marie M Callaway<span class="work">Professor</span></h4>
-                            <ul class="social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -490,57 +441,32 @@
                     <div class="testimonial-slider owl-carousel owl-theme">
 
                         <div class="single-testimonial">
-                            <img src="assets/img/testimonial/1.png" alt="#">
                             <div class="main-content">
-                                <h4 class="name">Edna F Herron</h4>
-                                <div class="testi-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img src="assets/img/testimonial/1.png" alt="#">
+                                    </div>
+                                    <div class="col-7">
+
+                                        <h4 class="name">Edna F Herron</h4>
+                                        <div class="testi-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                            have
+                                            suffered alteration in some form, by injected humour, or randomised words which
+                                            don't
+                                            look even slightly believable.</p>
+                                    </div>
                                 </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which don't
-                                    look even slightly believable.</p>
                             </div>
                         </div>
 
 
-                        <div class="single-testimonial">
-                            <img src="assets/img/testimonial/2.png" alt="#">
-                            <div class="main-content">
-                                <h4 class="name">Vera Henderson</h4>
-                                <div class="testi-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which don't
-                                    look even slightly believable.</p>
-                            </div>
-                        </div>
-
-
-                        <div class="single-testimonial">
-                            <img src="assets/img/testimonial/3.png" alt="#">
-                            <div class="main-content">
-                                <h4 class="name">Edna Linthicum</h4>
-                                <div class="testi-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which don't
-                                    look even slightly believable.</p>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -727,8 +653,7 @@
         </div>
     </section>
 
-{{-- 
-    <section class="blog section">
+    {{-- <section class="blog section">
         <div class="container">
             <div class="row">
                 <div class="col-12">

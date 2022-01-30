@@ -271,7 +271,6 @@
   display: block;
   position: relative;
   text-shadow: none;
-  border-radius: 10px;
 }
 .header .header-menu3 .nav li a {
   color: #252525;
@@ -287,7 +286,6 @@
 .header .nav li .dropdown {
   background: #026f9b;
   width: 220px;
-  border-radius: 10px;
   position: absolute;
   left: 0;
   z-index: 99;
@@ -1471,7 +1469,7 @@
   margin-left: -5px;
 }
 .testimonials {
-  background-image: url(../img/testimonial/testi-bg.jpg);
+  background-image: url(/assets/img/college/3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1490,12 +1488,12 @@
   box-shadow: inherit;
 }
 .testimonials .single-testimonial img {
-  position: absolute;
-  left: 50%;
-  margin-left: -37px;
-  top: -37px;
-  height: 80px;
-  width: 80px;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* margin-left: -37px; */
+  /* top: -37px; */
+  /* height: 150px;
+  width: 150px; */
   border-radius: 100%;
   border: 5px solid #026f9b;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
@@ -1518,24 +1516,24 @@
   z-index: 4;
   margin: 35px 0;
 }
-.testimonials .main-content:before,
+/* .testimonials .main-content:before,
 .testimonials .main-content:after {
   position: absolute;
   font-family: "font awesome 5 pro";
   font-size: 32px;
   z-index: -4;
   color: #026f9b;
-}
-.testimonials .main-content::before {
+} */
+/* .testimonials .main-content::before {
   left: 0;
   top: -33px;
   content: "\f10d";
-}
-.testimonials .main-content::after {
+} */
+/* .testimonials .main-content::after {
   right: 0;
   bottom: -33px;
   content: "\f10e";
-}
+} */
 .testimonials .single-testimonial h4 {
   font-weight: 700;
   font-size: 20px;
@@ -1849,7 +1847,7 @@
   right: 10px;
 }
 .fun-facts {
-  background: url(../img/cta-bg.jpg);
+  background: url(/assets/img/college/22.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

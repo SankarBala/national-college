@@ -2,17 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Option;
 use Illuminate\Http\Request;
-use Illuminate\View\View;
 
-class OptionController extends Controller
+class clsController extends Controller
 {
-    public function __construct()
-    {
-        //
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -20,7 +13,7 @@ class OptionController extends Controller
      */
     public function index()
     {
-        return view('admin.settings');
+        //
     }
 
     /**
@@ -41,21 +34,16 @@ class OptionController extends Controller
      */
     public function store(Request $request)
     {
-        print_r($request->all());
-
-        foreach ($request->all() as $key => $value) {
-            option($key, $value);
-        }
-        return back();
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Option  $option
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Option $option)
+    public function show($id)
     {
         //
     }
@@ -63,10 +51,10 @@ class OptionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Option  $option
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Option $option)
+    public function edit($id)
     {
         //
     }
@@ -75,10 +63,10 @@ class OptionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Option  $option
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Option $option)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -86,10 +74,10 @@ class OptionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Option  $option
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Option $option)
+    public function destroy($id)
     {
         //
     }

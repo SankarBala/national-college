@@ -1,12 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Models\Notice;
+use App\Http\Controllers\Controller;
+use App\Models\Option;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
-class NoticeController extends Controller
+class OptionController extends Controller
 {
+    public function __construct()
+    {
+        //
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,8 +21,7 @@ class NoticeController extends Controller
      */
     public function index()
     {
-        view()->share('allNotices',  \App\Models\Notice::where('status', 'publish')->orderBy('id', 'desc')->get());
-        return view('notice');
+        return view('admin.settings');
     }
 
     /**
@@ -36,27 +42,32 @@ class NoticeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        print_r($request->all());
+
+        foreach ($request->all() as $key => $value) {
+            option($key, $value);
+        }
+        return back();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Responses
+     * @param  \App\Models\Option  $option
+     * @return \Illuminate\Http\Response
      */
-    public function show(Notice $notice)
+    public function show(Option $option)
     {
-        return view('noticeView', compact('notice', $notice));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Option  $option
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Option $option)
     {
         //
     }
@@ -65,10 +76,10 @@ class NoticeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Option  $option
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Option $option)
     {
         //
     }
@@ -76,10 +87,10 @@ class NoticeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Option  $option
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Option $option)
     {
         //
     }

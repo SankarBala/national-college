@@ -2,11 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Event;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\View;
-use Illuminate\Validation\Rule;
 
 class EventController extends Controller
 {
@@ -17,8 +13,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        View::share('events', Event::all());
-        return view('admin.event.index');
+        //
     }
 
     /**
@@ -28,7 +23,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('admin.event.create');
+        //
     }
 
     /**
@@ -39,96 +34,51 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-
-        Validator::make($request->all(), [
-            'title' => 'required|min:5',
-            'attachment' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ])->validate();
-
-
-        $event = new Event;
-        $event->title = $request->title;
-        $event->description = $request->description;
-        if ($request->has('attachment')) {
-
-            $fileName = time() . '.' . $request->attachment->extension();
-            $request->attachment->move(public_path('storage/event'), $fileName);
-            $event->event_picture = "event/" . $fileName;
-        }
-        $event->startTime = trim(explode('-', $request->eventTimeRange)[0]);
-        $event->endTime = trim(explode('-', $request->eventTimeRange)[1]);
-
-        $event->save();
-
-        return redirect(route('admin.event.index'))->with('success', 'Event created successfully');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Event  $event
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Event $event)
+    public function show($id)
     {
-        dd('EventController@show');
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Event  $event
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event, $id)
+    public function edit($id)
     {
-        View::share('event', $event->find($id));
-        return view('admin.event.edit');
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Event  $event
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Event $event, $id)
-    { 
-        Validator::make($request->all(), [
-            'title' => 'required|min:5',
-            'attachment' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ])->validate();
-
-        
-        $event = $event->find($id);
-        $event->title = $request->title;
-        $event->description = $request->description;
-        if ($request->has('attachment')) {
-
-            $fileName = time() . '.' . $request->attachment->extension();
-            $request->attachment->move(public_path('storage/event'), $fileName);
-            $event->event_picture = "event/" . $fileName;
-        }
-        $event->startTime = trim(explode('-', $request->eventTimeRange)[0]);
-        $event->endTime = trim(explode('-', $request->eventTimeRange)[1]);
-
-        $event->save();
-
-        return redirect(route('admin.event.index'))->with('success', 'Event created successfully');
-
-
+    public function update(Request $request, $id)
+    {
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Event  $event
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event, $id)
+    public function destroy($id)
     {
-        $event->find($id)->delete();
-        return redirect()->route('admin.event.index');
+        //
     }
 }

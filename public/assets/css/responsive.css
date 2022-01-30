@@ -183,12 +183,12 @@ Version: 1.0
 }
 .slicknav_menu {
 	display: block;
-	margin-top: -28px;
+	margin-top: -60px;
 }
 .slicknav_btn {
 	margin: 0;
 	position: relative;
-	top: -12px;
+	top: -40px;
 }
 .header .header-inner {
 	padding: 6px 0;
