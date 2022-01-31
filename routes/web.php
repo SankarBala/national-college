@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\EventController;
@@ -28,3 +29,15 @@ Route::get('/terms-of-use', [BaseController::class, 'termsOfUse'])->name('terms-
 Route::resource('/event', EventController::class)->only('index', 'show');
 Route::resource('/notice', NoticeController::class)->names('notice');
 Route::resource('/message', MessageController::class)->only(['store'])->names('message');
+// Auth::routes();
+
+// Route::get('/login', [AuthController::class, 'loginView'])->name('loginView');
+// Route::post('/login', [AuthController::class, 'login'])->name('login');
+// Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Auth::routes();
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+

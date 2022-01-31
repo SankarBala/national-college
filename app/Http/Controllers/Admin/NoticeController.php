@@ -80,9 +80,11 @@ class NoticeController extends Controller
      * @param  \App\Models\Notice  $notice
      * @return \Illuminate\Http\Response
      */
-    public function edit(Notice $notice, $id)
+    public function edit(Notice $notice)
+
     {
-        View::share('notice', Notice::find($id));
+
+        View::share('notice', $notice);
 
         return view('admin.notice.edit');
     }
@@ -125,9 +127,9 @@ class NoticeController extends Controller
      * @param  \App\Models\Notice  $notice
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Notice $notice, $id)
+    public function destroy(Notice $notice)
     {
-        Notice::find($id)->delete();
+        $notice->delete();
         return redirect()->back()->with('success', 'Notice deleted successfully');
     }
 }

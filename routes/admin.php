@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\BaseController as AdminBaseController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\NoticeController;
 use App\Http\Controllers\Admin\OptionController;
+use App\Http\Controllers\Admin\MessageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,12 +18,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+    Route::get('/', [AdminBaseController::class, 'index'])->name('index');
 
-Route::get('/', [AdminBaseController::class, 'index'])->name('index');
 
+    // Resourse routes
+    Route::resource('/notice', NoticeController::class)->names('notice');
+    Route::resource('/event', EventController::class)->names('event');
+    Route::resource('/settings', OptionController::class)->names('setting');
+    Route::resource('/message', MessageController::class)->except(['store'])->names('message');
 
-// Resourse routes
-Route::resource('/notice', NoticeController::class)->names('notice');
-Route::resource('/event', EventController::class)->names('event');
-Route::resource('/settings', OptionController::class)->names('setting');
-// Route::resource('/message', MessageController::class)->except(['store'])->names('message');
+    Route::get('/test', function () {
+        return  "test";
+    })->middleware('admin');

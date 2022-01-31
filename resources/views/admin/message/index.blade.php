@@ -18,36 +18,28 @@
             <table id="report_table" class="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        <th>Event ID</th>
-                        <th>Title</th>
-                        <th>Event Time</th>
-                        <th class="float-right">Action</th>
+                        <th>Message ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th class="">Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($events as $notice)
+                    @foreach ($messages as $notice)
 
                         <tr>
                             <td>{{ $notice->id }}</td>
-                            <td>{{ $notice->title }}</td>
-                            <td>{{ $notice->startTime }} - {{ $notice->endTime}}</td>
+                            <td>{{ $notice->name }}</td>
+                            <td>{{ $notice->phone}}</td>
+                            <td>{{ $notice->email}}</td>
                             <td class="float-right">
-                                @if ($notice->attachment)
-                                    <a class="btn btn-info" href="{{ asset('storage/' . $notice->attachment) }}"
-                                        target="_blank">
-                                        View
-                                    </a>
-                                @endif
-                                <a class="btn btn-warning" href="{{ route('admin.event.edit', $notice->id) }}">
-                                    Edit
+                               
+                                <a class="btn btn-info" href="{{ route('admin.message.show', $notice->id) }}">
+                                    View
                                 </a>
 
-                                <form method="post" action="{{ route('admin.event.destroy', $notice) }}"
-                                    style="display: inline;">
-                                    @csrf
-                                    @method('DELETE')
-                                    <input class="btn btn-danger" type="submit" value="Delete" />
-                                </form>
+                              
 
                             </td>
                         </tr>

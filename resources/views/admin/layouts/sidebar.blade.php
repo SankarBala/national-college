@@ -93,7 +93,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="{{route('admin.setting.index')}}" class="nav-link">
+            <a href="{{route('admin.message.index')}}" class="nav-link">
               <i class="nav-icon fas fa-envelope"></i>
               <p>
                 Messege

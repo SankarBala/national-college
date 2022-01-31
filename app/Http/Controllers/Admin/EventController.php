@@ -56,6 +56,7 @@ class EventController extends Controller
             $request->attachment->move(public_path('storage/event'), $fileName);
             $event->event_picture = "event/" . $fileName;
         }
+
         $event->startTime = trim(explode('-', $request->eventTimeRange)[0]);
         $event->endTime = trim(explode('-', $request->eventTimeRange)[1]);
 
@@ -81,9 +82,9 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event, $id)
+    public function edit(Event $event)
     {
-        View::share('event', $event->find($id));
+        View::share('event', $event);
         return view('admin.event.edit');
     }
 
@@ -94,15 +95,14 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Event $event, $id)
-    { 
+    public function update(Request $request, Event $event)
+    {
         Validator::make($request->all(), [
             'title' => 'required|min:5',
             'attachment' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ])->validate();
 
-        
-        $event = $event->find($id);
+
         $event->title = $request->title;
         $event->description = $request->description;
         if ($request->has('attachment')) {
@@ -117,8 +117,6 @@ class EventController extends Controller
         $event->save();
 
         return redirect(route('admin.event.index'))->with('success', 'Event created successfully');
-
-
     }
 
     /**
@@ -127,9 +125,9 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event, $id)
+    public function destroy(Event $event)
     {
-        $event->find($id)->delete();
+        $event->delete();
         return redirect()->route('admin.event.index');
     }
 }
