@@ -135,9 +135,10 @@
                                             <li><a href={{route('notice.index')}}>All Notice</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{ route('event.index') }}">Events</a></li>
+                                    {{-- <li><a href="{{ route('event.index') }}">Events</a></li> --}}
                                     <li><a href="{{ route('about-us') }}">About Us</a></li>
                                     <li><a href="{{ route('contact-us') }}">Contact Us</a></li>
+                                    <li><a href="{{ asset('assets/prospectus.pdf') }}" >Prospectus</a></li>
                                 </ul>
 
 

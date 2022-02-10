@@ -93,6 +93,30 @@
             </ul>
           </li>
           <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Teachers
+                <i class="fas fa-angle-left right"></i>
+                {{-- <span class="badge badge-info right">0</span> --}}
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('admin.teacher.create')}}" class="nav-link">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Enroll new teacher</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('admin.teacher.index')}}" class="nav-link">
+                  <i class="far fa-list-alt nav-icon"></i>
+                  <p>Teacher List</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
             <a href="{{route('admin.message.index')}}" class="nav-link">
               <i class="nav-icon fas fa-envelope"></i>
               <p>

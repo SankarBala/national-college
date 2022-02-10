@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\BaseController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
@@ -24,6 +25,7 @@ Route::get('/contact-us', [BaseController::class, 'contactUs'])->name('contact-u
 Route::get('/faq', [BaseController::class, 'faq'])->name('faq');
 Route::get('/privacy-policy', [BaseController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/terms-of-use', [BaseController::class, 'termsOfUse'])->name('terms-of-use');
+Route::get('/course', [BaseController::class, 'course'])->name('course');
 
 // Resourse routes
 Route::resource('/event', EventController::class)->only('index', 'show');

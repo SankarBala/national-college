@@ -51,7 +51,7 @@
             <ul class="navbar-nav ml-auto">
 
                 <!-- Messages Dropdown Menu -->
-                <li class="nav-item dropdown mr-3">
+                {{-- <li class="nav-item dropdown mr-3">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         <i class="far fa-envelope"></i>
                         <span class="badge badge-danger navbar-badge">10</span>
@@ -75,7 +75,7 @@
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
                     </div>
-                </li>
+                </li> --}}
 
                 @csrf
                 <li class="nav-item">

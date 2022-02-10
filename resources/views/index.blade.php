@@ -180,199 +180,105 @@
                     <div class="single-course">
                         <div class="course-head overlay">
                             <img src="assets/img/course/1.jpg" alt="#">
-                            <a href="course-single.html" class="btn"><i class="far fa-link"></i></a>
+                            {{-- <a href="course-single.html" class="btn"><i class="far fa-link"></i></a> --}}
                         </div>
                         <div class="single-content">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>10 Lessons</span>
+                                <span class="bg-success text-white px-2 py-1 rounded">Admission open</span>
                                 <div class="course-rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <span>(4.0)</span>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
                                 </div>
                             </div>
-                            <h4><a href="course-single.html">Business Management</a></h4>
+                            <h4><a href="">Science</a></h4>
                             <p>There are many variations of passages available, but the majority have suffered alteration in
                                 some form, by injected humour, or randomised words believable. </p>
                         </div>
                         <div class="course-meta">
                             <div class="meta-left">
-                                <span><i class="far fa-users"></i>60 Seats</span>
-                                <span><i class="far fa-clock"></i>3 Years</span>
+                                <span><i class="far fa-users"></i>100 Seats</span>
+                                <span><i class="far fa-clock"></i>2 Years</span>
                             </div>
-                            <span class="price">$850</span>
+
                         </div>
                     </div>
 
                 </div>
+
                 <div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-delay="0.6s">
 
                     <div class="single-course">
                         <div class="course-head overlay">
                             <img src="assets/img/course/2.jpg" alt="#">
-                            <a href="course-single.html" class="btn"><i class="far fa-link"></i></a>
+                            {{-- <a href="course-single.html" class="btn"><i class="far fa-link"></i></a> --}}
                         </div>
                         <div class="single-content">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>10 Lessons</span>
+                                <span class="bg-success text-white px-2 py-1 rounded">Admission open</span>
                                 <div class="course-rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <span>(4.0)</span>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
                                 </div>
                             </div>
-                            <h4><a href="course-single.html">Chemical Engineering</a></h4>
+                            <h4><a href="">Business Studies</a></h4>
                             <p>There are many variations of passages available, but the majority have suffered alteration in
                                 some form, by injected humour, or randomised words believable. </p>
                         </div>
                         <div class="course-meta">
                             <div class="meta-left">
-                                <span><i class="far fa-users"></i>60 Seats</span>
-                                <span><i class="far fa-clock"></i>3 Years</span>
+                                <span><i class="far fa-users"></i>100 Seats</span>
+                                <span><i class="far fa-clock"></i>2 Years</span>
                             </div>
-                            <span class="price">$850</span>
+
                         </div>
                     </div>
 
                 </div>
+
                 <div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-delay="0.8s">
 
                     <div class="single-course">
                         <div class="course-head overlay">
                             <img src="assets/img/course/3.jpg" alt="#">
-                            <a href="course-single.html" class="btn"><i class="far fa-link"></i></a>
+                            {{-- <a href="course-single.html" class="btn"><i class="far fa-link"></i></a> --}}
                         </div>
                         <div class="single-content">
                             <div class="d-flex justify-content-between mb-2">
-                                <span>10 Lessons</span>
+                                <span class="bg-success text-white px-2 py-1 rounded">Admission open</span>
                                 <div class="course-rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <span>(4.0)</span>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
                                 </div>
                             </div>
-                            <h4><a href="course-single.html">Civil Engineering</a></h4>
+                            <h4><a href="">Humanities</a></h4>
                             <p>There are many variations of passages available, but the majority have suffered alteration in
                                 some form, by injected humour, or randomised words believable. </p>
                         </div>
                         <div class="course-meta">
                             <div class="meta-left">
-                                <span><i class="far fa-users"></i>60 Seats</span>
-                                <span><i class="far fa-clock"></i>3 Years</span>
+                                <span><i class="far fa-users"></i>100 Seats</span>
+                                <span><i class="far fa-clock"></i>2 Years</span>
                             </div>
-                            <span class="price">$850</span>
+
                         </div>
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-delay="1s">
 
-                    <div class="single-course">
-                        <div class="course-head overlay">
-                            <img src="assets/img/course/4.jpg" alt="#">
-                            <a href="course-single.html" class="btn"><i class="far fa-link"></i></a>
-                        </div>
-                        <div class="single-content">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>10 Lessons</span>
-                                <div class="course-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <span>(4.0)</span>
-                                </div>
-                            </div>
-                            <h4><a href="course-single.html">Food Science</a></h4>
-                            <p>There are many variations of passages available, but the majority have suffered alteration in
-                                some form, by injected humour, or randomised words believable. </p>
-                        </div>
-                        <div class="course-meta">
-                            <div class="meta-left">
-                                <span><i class="far fa-users"></i>60 Seats</span>
-                                <span><i class="far fa-clock"></i>3 Years</span>
-                            </div>
-                            <span class="price">$850</span>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-delay="1.2s">
 
-                    <div class="single-course">
-                        <div class="course-head overlay">
-                            <img src="assets/img/course/5.jpg" alt="#">
-                            <a href="course-single.html" class="btn"><i class="far fa-link"></i></a>
-                        </div>
-                        <div class="single-content">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>10 Lessons</span>
-                                <div class="course-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <span>(4.0)</span>
-                                </div>
-                            </div>
-                            <h4><a href="course-single.html">Health Studies</a></h4>
-                            <p>There are many variations of passages available, but the majority have suffered alteration in
-                                some form, by injected humour, or randomised words believable. </p>
-                        </div>
-                        <div class="course-meta">
-                            <div class="meta-left">
-                                <span><i class="far fa-users"></i>60 Seats</span>
-                                <span><i class="far fa-clock"></i>3 Years</span>
-                            </div>
-                            <span class="price">$850</span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-delay="1.4s">
-
-                    <div class="single-course">
-                        <div class="course-head overlay">
-                            <img src="assets/img/course/6.jpg" alt="#">
-                            <a href="course-single.html" class="btn"><i class="far fa-link"></i></a>
-                        </div>
-                        <div class="single-content">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>10 Lessons</span>
-                                <div class="course-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <span>(4.0)</span>
-                                </div>
-                            </div>
-                            <h4><a href="course-single.html">Architechture And Design</a></h4>
-                            <p>There are many variations of passages available, but the majority have suffered alteration in
-                                some form, by injected humour, or randomised words believable. </p>
-                        </div>
-                        <div class="course-meta">
-                            <div class="meta-left">
-                                <span><i class="far fa-users"></i>60 Seats</span>
-                                <span><i class="far fa-clock"></i>3 Years</span>
-                            </div>
-                            <span class="price">$850</span>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
     </section>
@@ -413,20 +319,18 @@
                 </div>
             </div>
             <div class="row">
-                @foreach ([1, 2, 3, 4] as $item)
+                @foreach ($teachers as $teacher)
                     <div class="col-lg-3 col-md-6 col-12 wow fadeIn" data-wow-delay="0.4s">
+
                         <div class="single-team">
-                            <img src="assets/img/team/1.jpg" alt="#">
-                            <div class="team-hover">
-                                <h4>Teacher name<span>Designation</span></h4>
-                                <ul class="social">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
+                            <img src="{{ $teacher->photo }}" alt="#">
+                            <div class="team-hover bg-warning">
+                                <h4>{{ $teacher->name }}<span>{{ $teacher->designation }}</span></h4>
+
                             </div>
                         </div>
+
+
                     </div>
                 @endforeach
             </div>
@@ -443,30 +347,53 @@
                         <div class="single-testimonial">
                             <div class="main-content">
                                 <div class="row">
-                                    <div class="col-5">
-                                        <img src="assets/img/testimonial/1.png" alt="#">
-                                    </div>
-                                    <div class="col-7">
-
-                                        <h4 class="name">Edna F Herron</h4>
+                                    <div class="col-12">
+                                        <h2 class="name">দৈনিক ইত্তেফাক</h2>
                                         <div class="testi-rating">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
-                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
                                         </div>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority
-                                            have
-                                            suffered alteration in some form, by injected humour, or randomised words which
-                                            don't
-                                            look even slightly believable.</p>
+                                        <h4 class="mb-1"><u>এইচএসসি’তে ন্যাশনাল কলেজের শতভাগ পাস</u></h4>
+                                        <p class="text-justify">
+                                            খুব অল্প সময়ই শিক্ষা বিস্তারে ব্যাপক অবদান রাখছে এমন প্রতিষ্ঠানের মধ্যে
+                                            ন্যাশানাল কলেজ একটি। ঢাকার মধ্যবাড্ডায় অবস্থিত ন্যাশনাল কলেজে পাশের হার গত ৩ বছর
+                                            পর পর এ+ সহ ১০০%। ভালো ফলাফলের পাশাপাশি প্রতিষ্ঠানের শিক্ষকমন্ডলী চরিত্র
+                                            গঠন, নৈতিকতা, দেশপ্রেম ও স্ব-স্ব ধর্মীয় মূল্যবোধের প্রতি গুরুত্বারোপ করে থাকেন।
+                                            এখানে মানবিক, বিজ্ঞান, ব্যবসায় শিক্ষা শাখায় শিক্ষার্থীরা অত্যন্ত চমৎকার ফলাফল
+                                            করে আসছে।</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
+                        <div class="single-testimonial">
+                            <div class="main-content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="name">আজকালের খবর</h2>
+                                        <div class="testi-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <h4 class="mb-1"><u>সফলতার সঙ্গে এগিয়ে চলছে বাড্ডার ন্যাশনাল কলেজ</u>
+                                        </h4>
+                                        <p class="text-justify">
+                                            মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষা বোর্ড ঢাকার অধীনে পরপর ১০০% সাফল্য অর্জনকারী
+                                            শ্রেষ্ঠ কয়েকটি কলেজের মধ্যে ন্যাশনাল কলেজ অন্যতম ন্যাশনাল কলেজ প্রতিষ্ঠালগ্ন
+                                            থেকে ভালো কিছু করার প্রত্যয়ী ছিল। যার প্রমাণ পাওয়া যায় এর পূর্বতন ফলাফল দেখলে।
+                                            ন্যাশনাল কলেজ থেকে ২০০৬ সালে এইসএসসিতে পাসের হার ছিল
+                                            শতভাগ। ইতোমধ্যে ন্যাশনাল কলেজ মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষাবোর্ড ঢাকার অধীনে
+                                            কয়েকটি শ্রেষ্ঠ কলেজের অন্যতম একটি। আর এই সফলতার পেছনে ছিল ছা্ত্র-ছাত্রী, শিক্ষক
+                                            এবং অভিবাবকদের কার্যক্রম ও মানসম্মত শিক্ষার নিশ্চয়তা।</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -480,7 +407,7 @@
             <div class="row">
                 <div class="col-12 wow zoomIn">
                     <div class="section-title">
-                        <h2>Our Upcoming <span>Events</span></h2>
+                        <h2>Recent <span>Events</span></h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page
                             when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                             distribution.</p>
@@ -490,32 +417,22 @@
             <div class="row">
                 <div class="col-12">
                     <div class="event-slider owl-carousel owl-theme">
+                        @foreach ($events as $event)
+                            <div class="single-event">
+                                <div class="head overlay">
+                                    <img src="{{ 'storage/' . $event->event_picture }}" alt="#">
 
-                        <div class="single-event">
-                            <div class="head overlay">
-                                <img src="assets/img/college/16.jpg" alt="#">
-                                <a href="assets/img/college/16.jpg" data-fancybox="photo" class="btn"><i
-                                        class="far fa-search"></i></a>
-                            </div>
-                            <div class="event-content">
-                                <div class="meta">
-                                    <span><i class="far fa-calendar-alt"></i>21 February 2022</span>
-                                    <span><i class="far fa-clock"></i>7.00AM-8.00AM</span>
                                 </div>
-                                <h4><a href="event-single.html">Event Title</a></h4>
-                                <p>Event description</p>
-                                <div class="button">
-                                    <a href="event-single.html" class="btn">Join Event <i
-                                            class="far fa-long-arrow-right"></i></a>
+                                <div class="event-content">
+                                    <div class="meta">
+                                        <span><i class="far fa-calendar-alt text-dark"></i>{{ $event->startTime }}</span>
+                                        {{-- <span><i class="far fa-clock"></i>7.00AM-8.00AM</span> --}}
+                                    </div>
+                                    <h4><a href="event-single.html">{{ $event->title }}</a></h4>
+                                    <p>{{ $event->description }}</p>
                                 </div>
                             </div>
-                        </div>
-
-
-
-
-
-
+                        @endforeach
                     </div>
                 </div>
             </div>

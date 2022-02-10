@@ -15,15 +15,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\User::factory(1)->create();
-        DB::table('options')->insert(
-            [
-                ['key' => 'brand', 'value' => 'National College'],
-                ['key' => 'tagline', 'value' => 'Learning Point'],
-                ['key' => 'address', 'value' => 'Pragati Sharanee, Badda, Gulshan, Dhaka-1212'],
-                ['key' => 'phone', 'value' => '+880-1745-993722'],
-                ['key' => 'email', 'value' => 'query@nationalcollege.edu.bd']
-            ]
-        );
+        \App\Models\Teacher::factory(10)->create();
+        // \App\Models\User::factory(1)->create();
+        // DB::table('options')->insert(
+        //     [
+        //         ['key' => 'brand', 'value' => 'National College'],
+        //         ['key' => 'tagline', 'value' => 'Learning Point'],
+        //         ['key' => 'address', 'value' => 'Pragati Sharanee, Badda, Gulshan, Dhaka-1212'],
+        //         ['key' => 'phone', 'value' => '+880-1745-993722'],
+        //         ['key' => 'email', 'value' => 'query@nationalcollege.edu.bd']
+        //     ]
+        // );
     }
 }

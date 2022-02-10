@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class NoticeController extends Controller
 {
+    
+    public function __construct()
+    {
+        view()->share('notices', Notice::take(8)->orderBy('id', 'desc')->get());
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +20,7 @@ class NoticeController extends Controller
      */
     public function index()
     {
-        view()->share('allNotices',  \App\Models\Notice::where('status', 'publish')->orderBy('id', 'desc')->get());
+        view()->share('allNotices',  Notice::where('status', 'publish')->orderBy('id', 'desc')->get());
         return view('notice');
     }
 

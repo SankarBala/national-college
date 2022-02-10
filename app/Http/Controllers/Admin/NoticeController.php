@@ -11,6 +11,7 @@ use Illuminate\Validation\Rule;
 
 class NoticeController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -44,7 +45,7 @@ class NoticeController extends Controller
         Validator::make($request->all(), [
             'title' => 'required|min:5',
             'status' => ['required', Rule::in(["publish", "draft"])],
-            'attachment' => 'mimes:pdf,doc,docx,xls,xlsx,ppt,pptx,zip,rar,7z,jpg,jpeg,png,gif,bmp,svg,txt|max:4096',
+            'attachment' => 'mimes:pdf,doc,docx,xls,xlsx,ppt,pptx,zip,rar,7z,jpg,jpeg,png,gif,bmp,svg,txt|max:10000',
         ])->validate();
 
         $notice = new Notice;

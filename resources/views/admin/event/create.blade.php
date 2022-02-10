@@ -25,6 +25,7 @@
         <form action="{{ route('admin.event.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row">
+                {{$errors}}
                 <div class="col">
                     <div class="card card-primary">
                         <div class="card-header">

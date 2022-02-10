@@ -2,13 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
+use App\Models\Notice;
+use App\Models\Teacher;
 use Illuminate\Http\Request;
 
 class BaseController extends Controller
 {
     public function __construct()
     {
-        //
+        view()->share('notices', Notice::take(8)->orderBy('id', 'desc')->get());
+        view()->share('events', Event::take(5)->orderBy('id', 'desc')->get());
+        view()->share('teachers', Teacher::all());
     }
 
     public function index()
@@ -38,10 +43,16 @@ class BaseController extends Controller
 
     public function termsOfUse()
     {
-        return view('terms-condition');
+        return view('terms-conditions');
     }
 
-    public function event(){
+    public function event()
+    {
         return view('event');
+    }
+
+    public function course()
+    {
+        return view('course');
     }
 }

@@ -1,12 +1,12 @@
 @extends('admin.layouts.app')
 
 @push('styles')
-    <link rel="stylesheet" href="{{asset('plugins/fontawesome-free/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
     <!-- DataTables -->
-    <link rel="stylesheet" href="{{asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
-    <link rel="stylesheet" href="{{asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
-    <link rel="stylesheet" href="{{asset('plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
-    <link rel="stylesheet" href="{{asset('plugins/toastr/toastr.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/toastr/toastr.min.css') }}">
 @endpush
 
 @section('content')
@@ -18,32 +18,22 @@
             <table id="report_table" class="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        <th>Message ID</th>
                         <th>Name</th>
                         <th>Phone</th>
                         <th>Email</th>
-                        <th class="">Action</th>
+                        <th>Message</th>
+                        <th>Sent</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($messages as $notice)
-
+                    @foreach ($messages as $message)
                         <tr>
-                            <td>{{ $notice->id }}</td>
-                            <td>{{ $notice->name }}</td>
-                            <td>{{ $notice->phone}}</td>
-                            <td>{{ $notice->email}}</td>
-                            <td class="float-right">
-                               
-                                <a class="btn btn-info" href="{{ route('admin.message.show', $notice->id) }}">
-                                    View
-                                </a>
-
-                              
-
-                            </td>
+                            <td>{{ $message->name }}</td>
+                            <td>{{ $message->phone }}</td>
+                            <td>{{ $message->email }}</td>
+                            <td>{{ $message->message }}</td>
+                            <td>{{ $message->created_at->format('d-M-y h:m A') }}</td>
                         </tr>
-
                     @endforeach
                 </tbody>
             </table>
@@ -51,24 +41,24 @@
         <!-- /.card-body -->
     </div>
     <!-- /.card -->
-   
+
 @endsection
 
 @push('scripts')
     <!-- DataTables  & Plugins -->
-    <script src="{{asset('plugins/datatables/jquery.dataTables.min.js')}}"></script>
-    <script src="{{asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
-    <script src="{{asset('plugins/datatables-responsive/js/dataTables.responsive.min.js')}}"></script>
-    <script src="{{asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
-    <script src="{{asset('plugins/datatables-buttons/js/dataTables.buttons.min.js')}}"></script>
-    <script src="{{asset('plugins/datatables-buttons/js/buttons.bootstrap4.min.js')}}"></script>
-    <script src="{{asset('plugins/jszip/jszip.min.js')}}"></script>
-    <script src="{{asset('plugins/pdfmake/pdfmake.min.js')}}"></script>
-    <script src="{{asset('plugins/pdfmake/vfs_fonts.js')}}"></script>
-    <script src="{{asset('plugins/datatables-buttons/js/buttons.html5.min.js')}}"></script>
-    <script src="{{asset('plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
-    <script src="{{asset('plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script>
-    <script src="{{asset('plugins/toastr/toastr.min.js')}}"></script>
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/jszip/jszip.min.js') }}"></script>
+    <script src="{{ asset('plugins/pdfmake/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('plugins/pdfmake/vfs_fonts.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+    <script src="{{ asset('plugins/toastr/toastr.min.js') }}"></script>
 
     <!-- Page specific script -->
     <script>

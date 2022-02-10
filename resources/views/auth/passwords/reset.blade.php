@@ -1,6 +1,8 @@
 @extends('layouts.skyspace')
 
 @section('content')
+
+    {{ $errors }}
     <div class="container">
         <div class="col-md-4 m-auto">
             <div class="card">
@@ -10,6 +12,9 @@
 
                     <form action="{{ route('password.update') }}" method="post">
                         @csrf
+                       <input type="hidden" name="token" value="{{$token}}" />	
+                        <input class="" name="email" value="{{ $email }}" type="hidden" />
+
                         <div class="input-group mb-0">
                             <input type="password" class="form-control password" placeholder="Password" name="password" />
                             <div class="input-group-append showPassword">

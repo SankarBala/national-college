@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\NoticeController;
 use App\Http\Controllers\Admin\OptionController;
 use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\TeacherController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,8 @@ use Illuminate\Support\Facades\Route;
     Route::resource('/event', EventController::class)->names('event');
     Route::resource('/settings', OptionController::class)->names('setting');
     Route::resource('/message', MessageController::class)->except(['store'])->names('message');
+    Route::resource('/teacher', TeacherController::class)->names('teacher');
+    
 
     Route::get('/test', function () {
         return  "test";
