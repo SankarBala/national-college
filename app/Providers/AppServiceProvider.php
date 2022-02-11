@@ -27,8 +27,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(Request $request)
     {
-        // if(!($request->is('admin/*') || $request->is('admin'))) {
-        //    view()->share('notices', Notice::take(8)->orderBy('id', 'desc')->get());
-        // }
+        
     }
 }

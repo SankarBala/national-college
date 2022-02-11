@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -56,9 +57,12 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::get('/artisan/{cmd}/{secret}', function (Request $request, $cmd, $secret) {
                 if ($secret == "admin") {
-                    Artisan::call($cmd);
+                    $exe = Artisan::call($cmd);
+                    if ($exe == 0) {
+                        return "Command Executed Successfully";
+                    }
                 }
-                return view("404");
+                return abort(404);
             });
         });
     }
