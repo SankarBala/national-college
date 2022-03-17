@@ -1,11 +1,11 @@
 .header {
-  background-color: #fff;
+  background-color: #e4e6e7;
 }
 .header .navbar-collapse {
   padding: 0;
 }
 .header .topbar {
-  background-color: #252525;
+  background-color: #026f9b;
   padding: 12px 0;
 }
 .header .content {
@@ -201,8 +201,8 @@
   width: 40px;
   height: 40px;
   line-height: 36px;
-  color: #00b16a;
-  border: 2px solid #00b16a;
+  color: #026f9b;
+  border: 2px solid #026f9b;
   border-radius: 100%;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -216,11 +216,11 @@
   font-size: 16px;
 }
 .header .single-widget h4 span {
-  color: #666;
-  font-weight: 400;
+  color: #026f9b;
+  font-weight: 500;
   display: block;
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .header .single-widget h4 a {
   color: #000;

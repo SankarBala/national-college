@@ -29,19 +29,17 @@
 </head>
 
 <body>
-    
-   
-
     <header class="header">
         <div class="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-12">
+                    <div class="col-lg-12 col-12">
                         <marquee direction="left" style="color:white">
                             <ul class="nav">
                                 @foreach ($notices as $notice)
                                     <li class=""><a class="my-0 py-0"
-                                            href="{{route('notice.show', $notice)}}">{{ $notice->title }}</a></li>
+                                            href="{{ route('notice.show', $notice) }}">{{ $notice->title }}</a>
+                                    </li>
                                 @endforeach
                             </ul>
                         </marquee>
@@ -50,13 +48,13 @@
                         <div class="topbar-right">
 
                             <ul class="social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                {{-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> --}}
+                                {{-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> --}}
+                                {{-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> --}}
                             </ul>
 
 
-                            <div class="search">
+                            {{-- <div class="search">
                                 <ul>
                                     <li class="search_btn"><a href="#"><i class="far fa-search"></i></a></li>
                                 </ul>
@@ -71,7 +69,7 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>
@@ -83,14 +81,24 @@
         <div class="header-inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-12">
-                        <div class="logo">
-                            <a href="{{ route('index') }}"><img src="{{asset('assets/img/logo.png')}}" alt="#" width="100px"
-                                    height=""></a>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="h-100 d-none d-md-block">
+                            <a href="{{ route('index') }}">
+                                <img class="mt-2" src="{{ asset('assets/img/logo.png') }}" alt="#">
+                            </a>
                         </div>
-                        <div class="mobile-menu"></div>
+                        <div class="row d-md-none d-block">
+                            <div class="col-10">
+                                <div class="h-100 ">
+                                    <a href="{{ route('index') }}">
+                                        <img class="mt-2" src="{{ asset('assets/img/logo.png') }}" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mt-5 mobile-menu"></div>
+                        </div>
                     </div>
-                    <div class="col-lg-9 col-md-9 col-12">
+                    <div class="col-lg-8 col-md-8 col-12">
 
                         <div class="header-widget">
                             <div class="single-widget">
@@ -125,20 +133,13 @@
 
                                 <ul id="nav" class="nav menu navbar-nav">
                                     <li class=""><a href="{{ route('index') }}">Home</a></li>
-                                    <li><a href="#">Admission<i class="far fa-angle-down"></i></a>
-                                        <ul class="dropdown">
-                                            <li><a href="">Get Admission</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Notice<i class="far fa-angle-down"></i></a>
-                                        <ul class="dropdown">
-                                            <li><a href={{route('notice.index')}}>All Notice</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href={{ route('notice.index') }}>Notice</a></li>
+                                    <li class=""><a href="{{ route('results') }}">Result</a></li>
                                     {{-- <li><a href="{{ route('event.index') }}">Events</a></li> --}}
                                     <li><a href="{{ route('about-us') }}">About Us</a></li>
                                     <li><a href="{{ route('contact-us') }}">Contact Us</a></li>
-                                    <li><a href="{{ asset('assets/prospectus.pdf') }}" >Prospectus</a></li>
+                                    <li><a href="{{ route('achievements') }}">Our Achivements</a></li>
+                                    <li><a href="{{ asset('assets/prospectus.pdf') }}">Prospectus</a></li>
                                 </ul>
 
 
@@ -205,7 +206,7 @@
 
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2709.088365102505!2d90.4242365071291!3d23.776576747510052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d23.776842799999997!2d90.4257303!4m5!1s0x3755c7ba09302d9b%3A0x9155f2b042302111!2snational%20college!3m2!1d23.7768329!2d90.4254472!5e0!3m2!1sbn!2sbd!4v1643524943150!5m2!1sbn!2sbd"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                     </div>
                 </div>

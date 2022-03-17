@@ -25,7 +25,6 @@
         <form action="{{ route('admin.notice.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row">
-                {{$errors}}
                 <div class="col">
                     <div class="card card-primary">
                         <div class="card-header">
@@ -36,9 +35,6 @@
                                 <label for="inputName">Notice title</label>
                                 <input type="text" id="inputName" class="form-control" name="title"
                                     value="{{ old('title') }}" required>
-                                {{-- @error('title')
-                                    <div class="alert alert-danger">{{ $message }}</div>
-                                @enderror --}}
                             </div>
                             <div class="form-group">
                                 <label for="inputDescription">Notice Description</label>

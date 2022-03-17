@@ -26,6 +26,9 @@ Route::get('/faq', [BaseController::class, 'faq'])->name('faq');
 Route::get('/privacy-policy', [BaseController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/terms-of-use', [BaseController::class, 'termsOfUse'])->name('terms-of-use');
 Route::get('/course', [BaseController::class, 'course'])->name('course');
+Route::get('/achievements', [BaseController::class, 'achievements'])->name('achievements');
+Route::get('/achievement/{achievement}', [BaseController::class, 'achievement'])->name('achievement');
+Route::get('/results', [BaseController::class, 'results'])->name('results');
 
 // Resourse routes
 Route::resource('/event', EventController::class)->only('index', 'show');
@@ -40,6 +43,5 @@ Route::resource('/message', MessageController::class)->only(['store'])->names('m
 Auth::routes();
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 

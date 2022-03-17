@@ -2,7 +2,7 @@
  <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="{{asset('assets/img/logo.png')}}" alt="NC" class="brand-image img-circle elevation-3"
+      <img src="{{asset('assets/img/logo2.png')}}" alt="NC" class="brand-image img-circle elevation-3"
         style="opacity: .8">
       <span class="brand-text font-weight-light">National College</span>
     </a>
@@ -72,6 +72,30 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
+                Result
+                <i class="fas fa-angle-left right"></i>
+                {{-- <span class="badge badge-info right">0</span> --}}
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('admin.result.create')}}" class="nav-link">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Add new</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('admin.result.index')}}" class="nav-link">
+                  <i class="far fa-list-alt nav-icon"></i>
+                  <p>All results</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
                 Events
                 <i class="fas fa-angle-left right"></i>
                 {{-- <span class="badge badge-info right">0</span> --}}
@@ -88,6 +112,30 @@
                 <a href="{{route('admin.event.index')}}" class="nav-link">
                   <i class="far fa-list-alt nav-icon"></i>
                   <p>All event</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Achivement
+                <i class="fas fa-angle-left right"></i>
+                {{-- <span class="badge badge-info right">0</span> --}}
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('admin.achivement.create')}}" class="nav-link">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Add new</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('admin.achivement.index')}}" class="nav-link">
+                  <i class="far fa-list-alt nav-icon"></i>
+                  <p>All Achivement</p>
                 </a>
               </li>
             </ul>
@@ -121,7 +169,6 @@
               <i class="nav-icon fas fa-envelope"></i>
               <p>
                 Messege
-                <span class="right badge badge-danger">New</span>
               </p>
             </a>
           </li>

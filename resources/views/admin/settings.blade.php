@@ -10,6 +10,7 @@
             </div>
             <div class="card-body">
                 <form action="{{route('admin.setting.store')}}" method="post" enctype="multipart/form">
+                    @csrf
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">

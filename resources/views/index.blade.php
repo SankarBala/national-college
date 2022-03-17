@@ -9,16 +9,62 @@
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
                             <div class="slider-text">
-                                <h1>Best Educational Institute <span>Academic And Proffesional</span></h1>
-                                <p>Besides standard lesson plan, expert and experienced teachers, teaching and strict
-                                    administration, a well location and surrounding of the institution is a prerequisite
-                                    undoubtedly. In view of this, National College has been set up in a learning oriented
-                                    distinct building at Gulshan-Baridhara aristocratic area to and from where one can
-                                    communicate easily.</p>
-                                <div class="button">
-                                    {{-- <a href="" class="btn primary">Our Courses</a>
-                                    <a href="" class="btn">Learn More</a> --}}
-                                </div>
+                                <h1>National College</h1>
+                                <h1><span>An Ideal Institute with new dimension</span></h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-slider overlay" style="background-image:url('assets/img/college/slider2.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <div class="slider-text">
+                                <h1>National College</h1>
+                                <h1><span>An Ideal Institute with new dimension</span></h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slider overlay" style="background-image:url('assets/img/college/slider3.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <div class="slider-text">
+                                <h1>National College</h1>
+                                <h1><span>An Ideal Institute with new dimension</span></h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slider overlay" style="background-image:url('assets/img/college/slider4.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <div class="slider-text">
+                                <h1>National College</h1>
+                                <h1><span>An Ideal Institute with new dimension</span></h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slider overlay" style="background-image:url('assets/img/college/slider5.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <div class="slider-text">
+                                <h1>National College</h1>
+                                <h1><span>An Ideal Institute with new dimension</span></h1>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -675,5 +721,4 @@
             </div>
         </div>
     </div>
-
 @endsection
